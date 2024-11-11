@@ -249,13 +249,13 @@ a:hover{
     background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-    padding: 10px;
-    align-items: center;
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    right: 4rem;
-    z-index: 1;
+   padding: 10px;
+   align-items: center;
+   position: absolute;
+   width: 2px;
+   height: 2px;
+   right: 4rem;
+   z-index: 1;
 }
 
 .upbge::selection{

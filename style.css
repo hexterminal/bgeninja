@@ -1,3 +1,7 @@
+:root{
+	--site-border-radius: 7px;
+}
+
 @font-face{
 	font-family: merri;
 	src: url('MerriweatherSans-VariableFont_wght.ttf') format('truetype');
@@ -104,8 +108,7 @@ body::-webkit-scrollbar-track{
 
 #sect-2 progress{
 	width: 50%;
-	margin-top: 50px;
-	padding-top: 10px;
+	margin-top: 20px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -230,7 +233,7 @@ button{
 	color: black;
 	background: #F19237;
 	padding: 10px;
-	border-radius: 10px;
+	border-radius: 7px;
 	border: solid transparent;
 	cursor: pointer;
 }
@@ -256,12 +259,12 @@ button:active{
 	transition: 0.25s;
 	display: flex;
 	flex-direction: column;
-	border-radius: 20px;
+	border-radius: 7px;
 	line-height: 3px;
 	background: transparent;
 	border: 2px;
 	border-color: white;
-	border-radius: 20px;
+	border-radius: 7px;
 	border-style: ridge;
 }
 
@@ -344,8 +347,8 @@ pre{
 	overflow-x: scroll;
 	font-size: 1rem;
 	border: 2px solid forestgreen;
-	border-top-right-radius: 20px;
-	border-top-left-radius: 20px;
+	border-top-right-radius: 7px;
+	border-top-left-radius: 7px;
 	box-shadow: inset 0px 0px 20px black;
 	transition: 0.25s;
 }
@@ -440,7 +443,7 @@ pre::-webkit-scrollbar-track{
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 20px;
+    border-radius: --site-border-radius;
     z-index: -1;
     transition: 0.25s;
 }
@@ -456,7 +459,7 @@ pre::-webkit-scrollbar-track{
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 20px;
+    border-radius: --site-border-radius;
     z-index: -1;
     transition: 0.25s;
 }
@@ -472,7 +475,7 @@ pre::-webkit-scrollbar-track{
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 20px;
+    border-radius: --site-border-radius;
     z-index: -1;
     transition: 0.25s;
 }
@@ -490,7 +493,7 @@ pre::-webkit-scrollbar-track{
     width: 100%;
     height: 100%;
     z-index: 0;
-    border-radius: 20px;
+    border-radius: --site-border-radius;
     z-index: -1;
     transition: 0.25s;
 }
@@ -508,7 +511,7 @@ pre::-webkit-scrollbar-track{
     width: 100%;
     height: 100%;
     z-index: 0;
-    border-radius: 20px;
+    border-radius: --site-border-radius;
     z-index: -1;
     transition: 0.25s;
 }
