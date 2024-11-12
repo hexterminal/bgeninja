@@ -18,17 +18,12 @@ body{
 }
 
 body::-webkit-scrollbar{
-	width: 1rem;
+	width: 10px;
 }
 
 body::-webkit-scrollbar-thumb{
 	background: azure;
-	border-radius: 5px;
-}
-
-body:hover::-webkit-scrollbar-thumb{
-	background: aqua;
-	border-radius: 5px;
+	border-radius: 10px;
 }
 
 *::selection{
@@ -43,6 +38,7 @@ body:hover::-webkit-scrollbar-thumb{
 	grid-gap: 50px;
 	margin-left: 5%;
 	margin-right: 5%;
+	padding: 0px;
 /*	flex-direction: row;*/
 /*	flex-wrap: wrap;*/
 }
@@ -74,13 +70,6 @@ body:hover::-webkit-scrollbar-thumb{
 	box-shadow: 0px 0px 5px black;
 }
 
-.container-cl a:hover{
-	transform: translateY(-10px);
-	background: transparent;
-	box-shadow: 0px 0px 20px azure;
-	transition: 0.1s;
-}
-
 .course-list a{
 	color: whitesmoke;
 	text-decoration: none;
@@ -106,22 +95,6 @@ h3{
 	font-variant: small-caps;
 	transition: 0.25s;
 	position: relative;
-}
-
-h3::after {
-    content: '';
-    transition: 0.25s;
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 100%;
-    height: 2px;
-    transform: scaleX(0);
-    background-color: whitesmoke;
-}
-
-h3:hover::after{
-	transform: scaleX(.2);
 }
 
 h4{
@@ -157,21 +130,26 @@ span:hover{
 	flex-direction: column;
 	text-align: center;
 	text-shadow: 0px 0px 10px black;
+	margin: 30px 0px 20px;
 }
 
 .sect-1 h1{
 	cursor: help;
-	font-size: 3rem;
-	margin: 0px;
-	margin-top: 1%;
+	font-size: 2rem;
+	margin: 0px 0px 0px;
+	text-decoration: underline;
 }
 
 .sect-2{
 	display: flex;
 	flex-direction: column;
-	background: #001;
+	background-color: firebrick;
 	justify-content: space-evenly;
 	align-items: center;
+}
+
+.sect-2 h2{
+	margin: 10px 0px -20px;
 }
 
 .sect-2 ul{
@@ -183,10 +161,10 @@ span:hover{
 	left: 0;
 	transition: 0.25s;
 	position: relative;
-	list-style: upper-roman;
+	list-style: square;
 	list-style-position: outside;
 	margin: 4px 0px 0px;
-	padding: 10px;
+	padding: 5px 3vw 5px;
 	padding-left: 4px;
 }
 
@@ -216,25 +194,7 @@ span:hover{
 	padding-bottom: 3%;
 }
 
-.bargo li {
-	position: relative;
-	padding: 5px;
-	list-style: none;
-	font-size: 1.25rem;
-}
-
-.bargo li::before {
-	content: '';
-	background-image: url('https://i.ibb.co/vVvg3xC/Ragh.webp');
-	background-size: contain;
-	background-repeat: no-repeat;
-	display: inline-flex;
-	width: var(--li-icon);
-	height:  var(--li-icon);
-	vertical-align: text-top;
-}
-
-/*Make site responsive*/
+/* 4K MONITORS */
 @media screen and (orientation: landscape) and (width <= 2561px){
 	.container-cl a{
 		list-style: none;
@@ -250,37 +210,64 @@ span:hover{
 	}
 	.container-cl{
 		grid-template-columns: auto auto auto auto auto;
+	}
+	.container-cl a:hover{
+		transform: translateY(-10px);
+		background: transparent;
+		box-shadow: 0px 0px 20px azure;
+		transition: 0.1s;
+	}
 	.course-list h3:hover::after{
 		transform: scaleX(1);
 	}
-}
-
-@media screen and (orientation: landscape) and (max-width: 1920px){
-	.container-cl{
-		grid-template-columns: auto auto auto auto;
+	h3::after {
+	    content: '';
+	    transition: 0.25s;
+	    position: absolute;
+	    left: 0;
+	    bottom: -5px;
+	    width: 100%;
+	    height: 2px;
+	    transform: scaleX(0);
+	    background-color: whitesmoke;
+	}	
+	h3:hover::after{
+		transform: scaleX(.2);
+	}
+	.bargo li {
+		position: relative;
+		padding: 5px;
+		list-style: none;
+		font-size: 1.25rem;
+	}
+	.bargo li::before {
+		content: '';
+		background-image: url('https://i.ibb.co/vVvg3xC/Ragh.webp');
+		background-size: contain;
+		background-repeat: no-repeat;
+		display: inline-flex;
+		width: var(--li-icon);
+		height:  var(--li-icon);
+		vertical-align: text-top;
+	}
 }
 
 @media screen and (orientation: portrait) and (max-width: 1080px){
-	.container-cl a{
-		list-style: none;
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 20px;
-		min-width: 0px;
-		max-width: 300px;
-		border: solid 2px;
-/*		border-radius: 20px;*/
-		box-shadow: 0px 0px 5px black;
-	}
 	.container-cl{
-		display: grid;
-		grid-template-columns: auto auto auto auto;
-		justify-content: space-evenly;
-		align-content: center;
-		grid-gap: 50px;
-		padding: 0px;
-	.course-list h3:hover::after{
-		transform: scaleX(1);
+		grid-template-columns: auto auto;
+	}
+	.sect-2 ul li:hover{
+		left: 0px;
+	}
+	h3{
+		text-decoration: underline;
+		text-underline-offset: 10px;
+	}
+	.bargo{
+		margin: -10px 0px 0px;
+	}
+	.bargo li{
+		padding: 5px;
+		margin: 0px 10vw 0px;
 	}
 }

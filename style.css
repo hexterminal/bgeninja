@@ -6,7 +6,9 @@
 	font-family: merri;
 	src: url('MerriweatherSans-VariableFont_wght.ttf') format('truetype');
 }
-/*MAIN stuff*/
+
+/* ============ INDEX.HTML ============ */
+
 * {
   box-sizing: border-box;
 }
@@ -90,6 +92,7 @@ body::-webkit-scrollbar-track{
 }
 
 #sect-1{
+	margin-bottom: -100px;
 	padding-top: 150px;
 	padding-bottom: 100px;
 	transition: 0.25s;
@@ -100,6 +103,10 @@ body::-webkit-scrollbar-track{
 	background-size: cover;
 	background-position: center;
 	text-align: center;
+}
+
+#course-space{
+	margin: 50px 0px 75px;
 }
 
 #sect-2 h3{
@@ -139,10 +146,6 @@ h1{
 	animation-name: fade;
 	animation-iteration-count: infinite;
 	animation-duration: 6s;
-}
-
-#heading h1, h3, .landing-text{
-	text-shadow: 0px 0px 20px black;
 }
 
 #up-txt{
@@ -346,10 +349,8 @@ pre{
 	margin-left: 20%;
 	overflow-x: scroll;
 	font-size: 1rem;
-	border: 2px solid forestgreen;
-	border-top-right-radius: 7px;
-	border-top-left-radius: 7px;
-	box-shadow: inset 0px 0px 20px black;
+	border: 2px solid transparent;
+	border-radius: 7px;
 	transition: 0.25s;
 }
 
@@ -366,7 +367,7 @@ pre::-webkit-scrollbar-thumb{
 	border-radius: 5px;
 }
 
-pre:hover::-webkit-scrollbar-thumb{
+pre::-webkit-scrollbar-thumb{
 	background: forestgreen;
 }
 
@@ -374,22 +375,18 @@ pre::-webkit-scrollbar-track{
 	color: transparent;
 }
 
+/* ============ CONTRIBUTE.HTML ============ */
+
+.sect-1_contr h1{
+	margin: 10px 2.5% 10px;
+}
+
 .howtocontr{
 	padding: 10px;
 }
 
-.howtocontr h3, p{
-	margin-right: 2.5%;
-	margin-left: 2.5%;
-}
-
-.howtocontr p{
-	margin-top: -10px;
-}
-
 .howtocontr h3{
 	position: relative;
-
 }
 
 .howtocontr h3::after{
@@ -402,17 +399,6 @@ pre::-webkit-scrollbar-track{
 .howtocontr h3:hover::after{
 	border-left: 20px solid;
 }
-
-/*#sect-1_contr h1, h3, ul{
-	margin-right: 2.5%;
-	margin-left: 2.5%;
-	position: relative;
-}
-
-#sect-1_contr ul{
-	list-style: decimal;
-
-}*/
 
 .dingus{
 	transition: 0.25s;
@@ -516,23 +502,7 @@ pre::-webkit-scrollbar-track{
     transition: 0.25s;
 }
 
-.dawg-serious h1, h3, p, ul{
-	margin-left: 5rem;
-	margin-right: 5rem;
-}
-
-.dawg-serious a{
-	text-decoration-color: navajowhite;
-	color: navajowhite;
-}
-
-.divide{
-	margin-top: 30px;
-	border: 1px solid darkgray;
-	width: 500px;
-	margin-left: auto;
-	margin-right: auto;
-}
+/* ============ ANIMATIONS AND ALIGNMENTS ============ */
 
 :target {
    animation: target_ 2s;
@@ -577,7 +547,7 @@ pre::-webkit-scrollbar-track{
 	}
 }
 
-/*makes site RESPONISVE*/
+/* FOR MOBILE DEVICES */
 @media screen and (orientation: portrait) and (max-width: 1080px){
 	#heading{
 		margin-left: 10%;
@@ -611,6 +581,9 @@ pre::-webkit-scrollbar-track{
 	#sect-1{
 		padding-top: 75px;
 		padding-bottom: 30px;
+	}
+	#course-space{
+		margin: 50px auto 50px;
 	}
 	#sect-3 h2{
 		margin-right: 10%;
@@ -671,6 +644,7 @@ pre::-webkit-scrollbar-track{
 		position: fixed;
 		z-index: 99;
 		box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+	}
 	h1{
 		margin-left: 20px !important;
 		margin-right: 20px !important;
@@ -682,7 +656,6 @@ pre::-webkit-scrollbar-track{
 	p{
 		margin: 10px;
 	}
-	
 	pre{
 		margin-right: 10px;
 		margin-left: 10px;

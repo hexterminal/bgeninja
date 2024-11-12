@@ -4,16 +4,60 @@
 		"selected_items":
 		[
 			[
-				"ro",
-				"table-row"
+				"back",
+				"background"
 			],
 			[
 				"mar",
-				"margin-right"
+				"margin"
+			],
+			[
+				"dark",
+				"darkmagenta"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"pad",
+				"padding"
 			],
 			[
 				"padd",
-				"padding-top"
+				"padding"
+			],
+			[
+				"under",
+				"text-underline-offset"
+			],
+			[
+				"decoration",
+				"text-decoration-skip"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"styl",
+				"style"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"sec",
+				"section"
+			],
+			[
+				"ro",
+				"table-row"
 			],
 			[
 				"in",
@@ -84,10 +128,6 @@
 				"margin-top"
 			],
 			[
-				"text",
-				"text-indent"
-			],
-			[
 				"ver",
 				"overflow-x"
 			],
@@ -132,10 +172,6 @@
 				"b"
 			],
 			[
-				"pad",
-				"padding-top"
-			],
-			[
 				"re",
 				"rebeccapurple"
 			],
@@ -162,10 +198,6 @@
 			[
 				"pixel",
 				"Pixelate"
-			],
-			[
-				"margin",
-				"margin-right"
 			],
 			[
 				"li",
@@ -196,10 +228,6 @@
 				"content"
 			],
 			[
-				"back",
-				"background-image"
-			],
-			[
 				"darkgree",
 				"darkgreen"
 			],
@@ -216,16 +244,8 @@
 				"iframe"
 			],
 			[
-				"sec",
-				"sect-3"
-			],
-			[
 				"rg",
 				"rgb()"
-			],
-			[
-				"dark",
-				"darkgray"
 			],
 			[
 				"bor",
@@ -270,10 +290,6 @@
 			[
 				"paddin",
 				"padding-bottom"
-			],
-			[
-				"font",
-				"font-weight"
 			],
 			[
 				"tex",
@@ -498,22 +514,6 @@
 			[
 				"border-",
 				"border-bottom"
-			],
-			[
-				"con",
-				"content"
-			],
-			[
-				"colo",
-				"color-scheme"
-			],
-			[
-				"text-col",
-				"text-decoration-color"
-			],
-			[
-				"blac",
-				"blanchedalmond"
 			]
 		]
 	},
@@ -665,15 +665,16 @@
 	"expanded_folders":
 	[
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja",
-		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/code",
-		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses",
-		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/advanced",
-		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/python"
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses"
 	],
 	"file_history":
 	[
-		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/index.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/python/intro.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/style2.css",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/style.css",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/index.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/about.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/contribute.html",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/advanced/compile-upbge.html",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/advanced/change-splash.html",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/style3.css",
@@ -684,7 +685,6 @@
 		"/C/Users/Jeba/Documents/CODING/C/yquake2-master/src/backends/windows/main.c",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/tutorials/character-physics.html",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/tutorials/intro.html",
-		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/style2.css",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/tutorials/py-toggle-buttons.html",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/tutorials/lb-screenshot.html",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/py-toggle-buttons.html",
@@ -695,7 +695,6 @@
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/tutorials/lb-toggle-buttons.html",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/tutorials/py-ingame-cheats.html",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/tutorials/set-resolution.html",
-		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/about.html",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/code/syntax.js",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/code/slides.js",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/python/4.html",
@@ -717,13 +716,11 @@
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/code/index.js",
 		"/C/Users/Jeba/wifite2/tests/test_Airmon.py",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/404.html",
-		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/contribute.html",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/logic-bricks/intro.html",
 		"/C/Users/Jeba/Documents/CODING/C++/test.cpp",
 		"/C/Users/Jeba/Documents/CODING/C++/upbge_source_code/source/gameengine/Ketsji/KX_GameObject.cpp",
 		"/C/Users/Jeba/Documents/CODING/C++/test2.cpp",
 		"/C/Users/Jeba/Documents/CODING/Python/INDIAN_CRINGE_VIRUS/INDIAN_CRINGE_VIRUS.py",
-		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/python/intro.html",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/logic-bricks/13.html",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/logic-bricks/12.html",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/logic-bricks/9.html",
@@ -800,13 +797,14 @@
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
 		"height": 619.0,
 		"where_history":
 		[
+			"C:\\Users\\Jeba\\Documents\\CODING\\HTML\\bgeninja,<project filters>"
 		]
 	},
 	"find_state":
@@ -814,6 +812,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"list-st",
+			"list",
+			"width",
+			"h3",
+			"dawg-serious",
+			"fade",
+			"text-shadow",
 			"type",
 			"nav",
 			"na",
