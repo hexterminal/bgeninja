@@ -4,12 +4,92 @@
 		"selected_items":
 		[
 			[
-				"back",
-				"background"
+				"dec",
+				"decimal"
+			],
+			[
+				"de",
+				"decimal-leading-zero"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"lis",
+				"list-style"
+			],
+			[
+				"under",
+				"text-underline-offset"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"align",
+				"align-content"
 			],
 			[
 				"mar",
 				"margin"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"posi",
+				"position"
+			],
+			[
+				"cont",
+				"content"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"whi",
+				"white"
+			],
+			[
+				"marin",
+				"margin"
+			],
+			[
+				"jus",
+				"justify-content"
+			],
+			[
+				"just",
+				"justify-content"
+			],
+			[
+				"mari",
+				"margin"
+			],
+			[
+				"hre",
+				"href"
+			],
+			[
+				"na",
+				"nav-bar-nojs"
+			],
+			[
+				"back",
+				"background"
 			],
 			[
 				"dark",
@@ -26,14 +106,6 @@
 			[
 				"pad",
 				"padding"
-			],
-			[
-				"padd",
-				"padding"
-			],
-			[
-				"under",
-				"text-underline-offset"
 			],
 			[
 				"decoration",
@@ -90,14 +162,6 @@
 			[
 				"overflow",
 				"overflow-y"
-			],
-			[
-				"lis",
-				"list-style"
-			],
-			[
-				"list",
-				"list-style"
 			],
 			[
 				"marg",
@@ -224,10 +288,6 @@
 				"royalblue"
 			],
 			[
-				"cont",
-				"content"
-			],
-			[
 				"darkgree",
 				"darkgreen"
 			],
@@ -252,10 +312,6 @@
 				"border"
 			],
 			[
-				"jus",
-				"justify-items"
-			],
-			[
 				"bl",
 				"skyblue"
 			],
@@ -266,10 +322,6 @@
 			[
 				"text-de",
 				"text-decoration"
-			],
-			[
-				"whi",
-				"ghostwhite"
 			],
 			[
 				"row",
@@ -292,10 +344,6 @@
 				"padding-bottom"
 			],
 			[
-				"tex",
-				"text-shadow"
-			],
-			[
 				"shadow",
 				"text-shadow"
 			],
@@ -314,10 +362,6 @@
 			[
 				"padding",
 				"padding-right"
-			],
-			[
-				"wid",
-				"width"
 			],
 			[
 				"nor",
@@ -374,10 +418,6 @@
 			[
 				"tr",
 				"transform"
-			],
-			[
-				"align",
-				"align-self"
 			],
 			[
 				"shad",
@@ -474,51 +514,23 @@
 			[
 				"padding-r",
 				"padding-right"
-			],
-			[
-				"darkd",
-				"darkgoldenrod"
-			],
-			[
-				"so",
-				"source"
-			],
-			[
-				"fon",
-				"font-family"
-			],
-			[
-				"text-s",
-				"text-transform"
-			],
-			[
-				"fony",
-				"font-style"
-			],
-			[
-				"content",
-				"content-visibility"
-			],
-			[
-				"fg",
-				"figcaption"
-			],
-			[
-				"l",
-				"li"
-			],
-			[
-				"border-b",
-				"border-bottom"
-			],
-			[
-				"border-",
-				"border-bottom"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "style3.css",
+			"settings":
+			{
+				"buffer_size": 6675,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+			]
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -669,10 +681,10 @@
 	],
 	"file_history":
 	[
-		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/python/intro.html",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/style2.css",
-		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/style.css",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/index.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/style.css",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/python/intro.html",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/about.html",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/contribute.html",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/advanced/compile-upbge.html",
@@ -812,6 +824,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"round",
+			"recc",
+			"margin",
+			"progress",
+			"button",
+			"recc",
+			"animation",
+			"anima",
+			"link",
 			"list-st",
 			"list",
 			"width",
@@ -862,6 +883,38 @@
 		{
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "style3.css",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6675,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								393,
+								393
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
 			]
 		}
 	],
