@@ -142,18 +142,12 @@ ul{
 }
 
 ul p{
-	margin-left:  40px;
-	margin-right: 40px;
-	margin-top:    3px;
-	margin-bottom: 3px;
-	transition:   0.2s;
+	/*margin-left:  0px;
+	margin-right:   0px;
+	margin-top:     3px;
+	margin-bottom:  3px;*/
+	margin: 3px 0px 3px;
 	line-height:  1.5em;
-	color: rgb(255, 255, 255, 0.9);
-}
-
-ul p:hover{
-	margin-left: 45px;
-	color: whitesmoke;
 }
 
 p{
@@ -311,6 +305,10 @@ a:hover{
 iframe{
 	width: -webkit-fill-available;
 	height: -webkit-fill-available;
+}
+
+.prosncons{
+	margin-top: -12.5px;
 }
 
 /* Target Stuff */

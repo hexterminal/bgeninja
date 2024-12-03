@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"margin",
+				"margin"
+			],
+			[
+				"hre",
+				"href"
+			],
+			[
+				"pro",
+				"prosncons"
+			],
+			[
+				"add",
+				"padding-top"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
 				"dec",
 				"decimal"
 			],
@@ -56,10 +76,6 @@
 				"content"
 			],
 			[
-				"dis",
-				"display"
-			],
-			[
 				"whi",
 				"white"
 			],
@@ -78,10 +94,6 @@
 			[
 				"mari",
 				"margin"
-			],
-			[
-				"hre",
-				"href"
 			],
 			[
 				"na",
@@ -118,10 +130,6 @@
 			[
 				"styl",
 				"style"
-			],
-			[
-				"margin",
-				"margin"
 			],
 			[
 				"sec",
@@ -506,31 +514,11 @@
 			[
 				"ligh",
 				"lightgray"
-			],
-			[
-				"dar",
-				"darkgray"
-			],
-			[
-				"padding-r",
-				"padding-right"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "style3.css",
-			"settings":
-			{
-				"buffer_size": 6675,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			},
-			"undo_stack":
-			[
-			]
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -677,20 +665,24 @@
 	"expanded_folders":
 	[
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja",
-		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses"
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/advanced"
 	],
 	"file_history":
 	[
-		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/style2.css",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/index.html",
-		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/style.css",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/advanced/intro.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/python/0.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/style3.css",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/python/1.html",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/python/intro.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/python/1 - Copy.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/style2.css",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/style.css",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/about.html",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/contribute.html",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/advanced/compile-upbge.html",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/advanced/change-splash.html",
-		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/style3.css",
-		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/advanced/intro.html",
 		"/C/Users/Jeba/Downloads/upbge-fps-setup-master/FPS_setup.py",
 		"/C/Users/Jeba/Desktop/test.cpp",
 		"/C/Users/Jeba/Documents/CODING/C/yquake2-master/src/backends/windows/system.c",
@@ -716,7 +708,6 @@
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/python/5.html",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/python/3.html",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/python/2.html",
-		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/python/1.html",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/code/smooth_criminal.js",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/brotips.html",
 		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/tutorials/check-ray-length.html",
@@ -824,6 +815,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"hover",
+			"transfor",
 			"round",
 			"recc",
 			"margin",
@@ -883,38 +876,6 @@
 		{
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "style3.css",
-					"selected": true,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6675,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								393,
-								393
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"tab_size": 3,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"stack_multiselect": false,
-					"type": "text"
-				}
 			]
 		}
 	],
