@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="UPBGE, Range, BGE">
+	<meta name="author" content="hexterminal">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/x-icon" href="img/bgeninja.ico">
+	<meta property="og:url" content="https://hexterminal.github.io/bgeninja">
+	<meta property="og:type" content="website">
+	<meta property="site_name" content="BGENinja">
+	<meta property="og:title" content="BGENinja">
+	<meta property="og:description" content="This fly website's got some sick tuts for UPBGE and Range, yo!">
+	<meta property="og:image" content="https://i.postimg.cc/jSf61kDY/main-bgeninja-img.jpg">
+	<!-- Twitter Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@BGENinja">
+	<meta name="twitter:title" content="BGENinja">
+	<meta property="twitter:domain" content="hexterminal.github.io">
+	<meta property="twitter:url" content="https://hexterminal.github.io/bgeninja">
+	<meta name="twitter:description" content="This fly website's got some sick tuts for UPBGE and Range, yo!">
+	<meta name="twitter:image" content="https://i.postimg.cc/jSf61kDY/main-bgeninja-img.jpg">
+	<title>BGENinja - Home</title>
+</head>
+<body>
+	<section id="sect-1" id="home">
+		<button id="toggle-nav">=</button>
+		<nav id="nav-bar">
+		    <ul>
+		        <li><img src="img/bgeninja.svg" alt="Logo" loading="lazy"></li>
+		        <div>
+		        	<li><a href="index.html">Home</a></li>
+		        	<li><a href="#course-space">Courses</a></li>
+		        	<li><a href="brotips.html">BroTips</a></li>
+		        	<li><a href="contribute.html">Contribute</a></li>
+		        	<li><a href="about.html">About</a></li>
+		        </div>
+		    </ul>
+		</nav>
+		<noscript>
+			<nav id="nav-bar-nojs">
+		    	<ul>
+		    	    <li><img src="img/bgeninja.svg" alt="Logo" loading="lazy"></li>
+		    	    <div>
+		    	    	<li><a href="index.html">Home</a></li>
+		    	    	<li><a href="#sect-2">Courses</a></li>
+		    	    	<li><a href="brotips.html">BroTips</a></li>
+		    	    	<li><a href="contribute.html">Contribute</a></li>
+		    	    	<li><a href="about.html">About</a></li>
+		    	    </div>
+		    	</ul>
+			</nav>
+		</noscript>
+		<div id="heading">
+			<h1>BGENinja</h1>
+			<h3>Open Game Engine Tutorials</h3>
+			<div class="landing-text">
+				<!-- need noscript video -->
+				This website will help you to discover what
+				<a id="up-txt" href="https://kitsuystudio.itch.io/upbge-026" target="_blank">UPBGE</a>
+				and
+				<a id="rng-txt" href="https://rangeengine.tech/" target="_blank">Range Engine</a>
+				can do.
+				<img id="img1" loading="eager" src="img/blend_ui.png">
+				<img id="img2" loading="eager" src="https://docs.blender.org/manual/en/latest/_images/getting-started_about_introduction_screenshot.jpg">
+				<img id="img3" loading="eager" src="https://www.blender.org/wp-content/uploads/2019/07/blender_render-1280x720.jpg?x12104">
+			</div>
+		</div>
+	</section>
+	<section id="course-space"></section>
+	<section id="sect-2">
+		<h2>Where do I start?</h2>
+		<div class="recc" id="logic-bricks">
+			<h3>Game Engine basics and Logic Bricks</h3>
+			<p>Learn the basics and the logic bricks.</p>
+			<button onclick="goto('/courses/logic-bricks/intro.html')">Learn Basics</button>
+			<noscript class="course-buttons-nojs">
+				<a href="./courses/logic-bricks/intro.html"><button>Learn Basics</button></a>
+			</noscript>
+			<progress value="13" max="15"></progress>
+			<p class="what-prog">Lessons Available: 13 / 15</p>
+		</div>
+		<div class="recc" id="python">
+			<h3>Python</h3>
+			<p>You'll learn to do stuff that can be done without logic bricks and have more control over your projects.</p>
+			<button onclick="goto('/courses/python/intro.html')">Learn Python</button>
+			<noscript class="course-buttons-nojs">
+				<a href="./courses/python/intro.html"><button>Learn Python</button></a>
+			</noscript>
+			<progress value="7" max="15"></progress>
+			<p class="what-prog">Lessons Available: 7 / ?</p>
+		</div>
+		<!-- <div class="recc" id="glsl">
+			<div class="rec-round">3</div>
+			<h3>GLSL</h3>
+			<p>You'll learn to make shaders!</p>
+			<button onclick="goto('/courses/glsl/intro.html')">Learn GLSL</button>
+		</div> -->
+		<div class="recc" id="tutorials">
+			<h3>Tutorials for game engine</h3>
+			<p>Game Engine tutorials with project files!</p>
+			<button onclick="goto('/courses/tutorials/intro.html')">Get Tutorials</button>
+			<noscript class="course-buttons-nojs">
+				<a href="./courses/tutorials/intro.html"><button>Get Tutorials</button></a>
+			</noscript>
+			<progress value="22" max="37"></progress>
+			<p class="what-prog">Lessons Available: 22 / 37</p>
+		</div>
+		<div class="recc" id="source-code">
+			<h3>Advanced Stuff</h3>
+			<p>Game engine source code related stuff.</p>
+			<button onclick="goto('/courses/advanced/intro.html')">Learn Source Code</button>
+			<noscript class="course-buttons-nojs">
+				<a href="./courses/advanced/intro.html"><button>Learn Source Code</button></a>
+			</noscript>
+			<progress value="2" max="3"></progress>
+			<p class="what-prog">Lessons Available: 2 / 2</p>
+		</div>
+	</section>
+	<section id="sect-3">
+		<div>
+			<h2>What is this all about?</h2>
+			<p>
+				Well, this site is about optimizing games.
+				UPBGE is a game engine forked by its developers from Blender 2.79's game engine
+				which was discontinued after Blender 2.80+. The engine has two version as
+				2.0+ which is the Blender's 2.79's branch and 4.0 which is 2.80+'s branch.
+				After a few years, UPBGE 2.x development was paused/discontinued as 2.5b
+				and a new project rised up, the <a href="https://rangeengine.tech">Range Engine</a> which is
+				being actively developed and maintained by its developers!
+			</p>
+			<p>
+				After a few months, UPBGE 2.6 by
+				<a class="kitsuy" href="https://kitsuystudio.itch.io/">Kitsuy</a> is being developed
+				seriously with much more bug fixes ending up more like next stable
+				version of UPBGE 2.5b.
+			</p>
+		</div>
+	</section>
+	<section id="sect-4">
+		<h2>Join the game engine's community at Discord</h2>
+		<div id="join-discord">
+			<div>
+				<img src="img/upbge.svg" loading="lazy">
+				<p><a href="https://discord.gg/B6GPm9eVgh" target="_blank">UPBGE 2.5</a>, 
+					<a href="https://discord.gg/63T6exEShU" target="_blank">2.6+</a></p>
+			</div>
+			<div>
+				<img src="img/range.svg" loading="lazy">
+				<p><a href="https://discord.gg/SkJmVmsRYU" target="_blank">Range Engine</a></p>
+			</div>
+		</div>
+	</section>
+	<style>
+		#heading h1, h3, .landing-text{
+			text-shadow: 0px 0px 20px black;
+		}
+		:target {
+			animation: none;
+		}
+	</style>
+	<!-- javascript stuff -->
+	<script src="code/index.js"></script>
+</body>
+</html>

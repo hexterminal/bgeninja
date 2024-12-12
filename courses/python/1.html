@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Python - 1</title>
+</head>
+<body>
+	<h1>Lesson 1 of BGE Python</h1>
+	<h3>Intro</h3>
+	<p>
+		If you want to survive, learn <a href="https://python.org" target="_blank">Python</a>.
+		If you dont't know Python, this can be very difficult to understand.
+		You have to learn at least the basics.
+	</p>
+	<h5>Things to know before learning the API</h5>
+	<ul>
+		<li>Grasping the basics of python properly will improve your workflow speed.</li>
+		<li>You can't do 100% python, ex. you need logic bricks to setup python.</li>
+		<li>You can not learn this within a day, it takes a lot of practice.</li>
+	</ul>
+	<!-- <figure>
+		<video src="../../img/xd.mp4" controls preload="none"></video>
+		<img src="../../img/pls-wait.png" loading="lazy">
+		<figcaption>some video goes here bro</figcaption>
+	</figure> -->
+	<h3>The code</h3>
+	<p>
+		This is an example of a simple python script used to activate an actuator.
+	</p>
+	<pre><code class="language-python">import Range # for blender game engine -> import bge
+cont = Range.logic.getCurrentController() # again, for bge -> bge.logic.getCurrentController()
+own = cont.owner
+
+def yourFunc(cont):
+	if own.sensors["your_sensor"].positive:
+		cont.activate(own.actuators['your_actuator'])</code></pre>
+	<h5>What the heck is hapening in this code</h5>
+	<p>
+		<u title="or 'import bge'">import Range</u> is importing the Range module.
+		If you know about true level triggering, importing a module again and again in a loop can affect performance.
+		If you are a guy who's concerned about performance, this is for you.
+	</p>
+	<p>
+		In <u title="or 'bge.logic.getCurrentController()'">cont = Range.logic.getCurrentController()</u>
+		we're defining <span class="mono">cont</span> as <span class="mono">Range.logic.getCurrentController()</span>.
+		This means you are getting the current Python controller which is one of the controllers list (and, or, nor, nand, xor, xnor)
+		associated with our python code. With that controller, you do stuff.
+	</p>
+	<p>
+		<u>cont.owner</u> Getting the cont's owner helps you to get all data and put inside an object.
+		If you're getting camera data, you'll be connecting the logic brick to the camera.
+		If you're getting light object's data, you'll be connecting the logic brick to light.
+		Or you'll be facing some issues.
+	</p>
+	<p>
+		<u>def yourFunc(cont):</u> As I mentioned earlier, importing the Range module or the bge module is not good.
+		So we get the data from the imported module once and do all the stuff inside the function in a looped manner.
+		The <span class="mono">cont</span> inside <span class="mono">yourFunc</span>
+	</p>
+	<p>
+		<u>if own.sensors["your_sensor"].positive:</u> This line says that
+		if that certain object and that object's sensor which is in the list <span class="mono">sensors</span> is positive,
+		which is <span class="mono">your_sensor</span> then we do our stuff.
+	</p>
+	<p>
+		<u>cont.activate(own.actuators['your_actuator'])</u> Here we are activating our actuator <span class="mono">your_actuator</span>
+		which is in the <span class="mono">actuators</span> list.
+	</p>
+	<script src="../../code/highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
+	<script type="text/javascript" src="../../code/syntax.js"></script>
+</body>
+</html>

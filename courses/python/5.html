@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Keyboard</title>
+</head>
+<body>
+	<h1>Keyboard</h1>
+	<p>
+		In this lesson we'll be making use of our keyboard using python.
+		There are different way of checking the keyboard input,
+		and we'll take a look at some of them.
+	</p>
+	<h3>Method 1</h3>
+	<p>
+		We'll import the game engine module as usual and we need
+		<span class="mono">bge.logic.keyboard</span> which is wrapped in
+		<span class="mono" title="If you don't know what this is its okay :)">
+			SCA_PythonKeyboard</span> class.<br>
+		This attribute has a dictionary which is <span class="mono">.activeInputs</span>
+		which holds the active input of the keyboard.<br>
+		So our code will be looking like:
+	</p>
+	<!-- Original code by KitsuyStudio at https://kitsuystudio.itch.io -->
+<pre><code>try:
+    import bge
+except:
+    import Range as bge
+def main(): # main function
+    cont = bge.logic.getCurrentController() # the script
+    own = cont.owner # scripts object
+    keysdown = bge.logic.keyboard.activeInputs # keyboard list</code></pre>
+    <p>
+    	Now in order to check if this is working, we add a cube and leave the name
+    	as <span class="mono">Cube</span> and make it move.<br>
+    	We'll check if the keyboard has any active keys in the
+    	<span class="mono">.activeInputs</span> like this
+    </p>
+    <pre><code>x = 0.0 # set x
+if 45 in keysdown: # look for W key in list, 45 = W key
+    y = 10.0 # set y</code></pre>
+    <p>
+    	Checking if the key <b>W</b> is in that dictionary so for remaining
+    	all <b>A</b>, <b>S</b> and <b>D</b> keys we'll do the following.
+    </p>
+    <pre><code>x = 0.0 # set x
+if 45 in keysdown: # look for W key in list, 45 = W key
+    y = 10.0 # set y
+elif 41 in keysdown and not 45 in keysdown:
+    y = -10
+else:y = 0.0 # no W key in list
+z = 0.0 # set z
+
+if 23 in keysdown and not 26 in keysdown:
+    zt = 100.0/4
+elif 26 in keysdown and not 23 in keysdown:
+    zt = -100.0/4
+else:zt = 0.0</code></pre>
+	<p>
+		If you are bit confused how <b>45</b> means <b>W</b> you can look at
+		<a href="https://rangeengine.tech/api/15/html/api/bge.events.html#keyboard-keys" target="_blank">the documentation</a>,
+		and here are the keycodes for the four keys.
+	</p>
+	<ul>
+		<li>W = <u>bge.events.WKEY</u> or <u>45</u></li>
+		<li>A = <u>bge.events.AKEY</u> or <u>23</u></li>
+		<li>S = <u>bge.events.SKEY</u> or <u>41</u></li>
+		<li>D = <u>bge.events.DKEY</u> or <u>26</u></li>
+	</ul>
+	<p>
+		Now to check if it's working we print <span class="mono">keydown</span>.
+		Open up the system console by going to <b>Window -> Toggle System Console</b>.<br>
+		By the way, this is how our code looks.
+	</p>
+<pre><code>try:
+    import bge
+except:
+    import Range as bge
+def main(): # the start
+    cont = bge.logic.getCurrentController() # the script
+    own = cont.owner # scripts object
+    keysdown = bge.logic.keyboard.activeInputs # keyboard list
+    x = 0.0 # set x
+    if 45 in keysdown: # look for W key in list, 45 = W key
+        y = 10.0 # set y
+    elif 41 in keysdown and not 45 in keysdown:
+    	y = -10.0
+    else:y = 0.0 # no W key in list
+    z = 0.0 # set z
+    
+    if 23 in keysdown and not 26 in keysdown:
+        zt = 100.0/4
+    elif 26 in keysdown and not 23 in keysdown:
+        zt = -100.0/4
+    else:zt = 0.0
+
+    print(keysdown)</code></pre>
+	<p>And this is how the logic bricks setup look.</p>
+	<figure>
+		<img src="https://i.postimg.cc/BbPH1YgN/keyboard-lesson-logic-bricks-setup.jpg" alt="Logic Bricks Setup">
+		<figcaption>Logic Bricks Setup</figcaption>
+	</figure>
+	<p>Now when we run the code it should look something like below.</p>
+	<figure>
+		<img src="https://u.cubeupload.com/ropap66508/whDhHp.gif" alt="Logic Bricks Setup">
+		<figcaption>User input being checked</figcaption>
+	</figure>
+	<p>
+		For the cube to move just add these two lines replacing
+		<span class="mono">print("keysdown")</span>.
+	</p>
+<pre><code>own.applyForce((x, y, z), True) # True = local
+own.applyTorque((0.0, 0.0, zt), True) # True = local</code></pre>
+	<p>
+		And finally that's it, we have a working keyboard setup written in python.<br>
+		<a href="https://drive.google.com/file/d/1_klemHNBWAH9iM75y62QwxICNnuaqb2e/view?usp=sharing" target="_blank">Download the file.</a>
+	</p>
+	<h3>Method 2</h3>
+	<p>Sorry... I will complete this part as soon as possible :(</p>
+	<script src="../../code/highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
+	<script type="text/javascript" src="../../code/syntax.js"></script>
+</body>
+</html>

@@ -1,0 +1,258 @@
+:root{
+	--li-icon: 28px;
+}
+
+@font-face{
+	font-family: merri;
+	src: url('MerriweatherSans-VariableFont_wght.ttf') format('truetype');
+}
+
+body{
+	background: #111;
+	font-family: 'merri', sans-serif;
+	color: whitesmoke;
+	margin: 0px;
+	overflow-x: hidden;
+	height: 100%;
+
+}
+
+body::-webkit-scrollbar{
+	width: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+	background: azure;
+	border-radius: 10px;
+}
+
+*::selection{
+	background-color: rgb(50, 100, 255, 1.0);
+}
+
+.container-cl{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	justify-content: space-evenly;
+	align-content: center;
+	grid-gap: 50px;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding: 0px;
+/*	flex-direction: row;*/
+/*	flex-wrap: wrap;*/
+}
+
+.container-cl img{
+	display: flex;
+	padding: 0px;
+	margin: 0px;
+	width: -webkit-fill-available;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    border-radius: 10px;
+}
+
+.container-cl a{
+	list-style: none;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	min-width: 0px;
+	max-width: 200px;
+	border: solid 2px;
+	border-radius: 10px;
+	transition: 0.25s;
+	box-shadow: 0px 0px 5px black;
+}
+
+.course-list a{
+	color: whitesmoke;
+	text-decoration: none;
+}
+
+.course-list a:hover{
+	text-decoration: none;
+}
+
+.course-list p{
+	color: gray;
+	text-decoration: none;
+}
+
+.ccl h5{
+	font-size: 20px;
+}
+
+h3{
+	cursor: default;
+	text-align: center;
+	font-size: 2rem;
+	font-variant: small-caps;
+	transition: 0.25s;
+	position: relative;
+	text-decoration: underline;
+	text-underline-offset: 5px;
+}
+
+h4{
+	font-size: 1.7rem;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+/*Numer thing*/
+span{
+	margin-right: 5px;
+  	background: -webkit-linear-gradient(#fff700 0%, #fffa6e 35%, #9e9900 50%, #fff700 55%, #fff700 100%);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	font-size: 20px;
+  	transition: 0.25s;
+}
+
+span:hover{
+	text-shadow: 0px 0px 20px yellow;
+}
+
+/*When focusing the contents*/
+.ccl:focus {
+  	outline: 2px solid orange;
+  	outline-offset: -2px;
+  	animation: focusing 0.5s infinite alternate;
+  	box-shadow: 0px 0px 10px orange;
+}
+
+.sect-1{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	text-shadow: 0px 0px 10px black;
+	margin: 30px 0px 20px;
+}
+
+.sect-1 h1{
+	cursor: help;
+	font-size: 2rem;
+	margin: 0px 0px 0px;
+	text-decoration: underline;
+}
+
+.sect-2{
+	display: flex;
+	flex-direction: column;
+	background-color: firebrick;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.sect-2 h2{
+	margin: 10px 0px -20px;
+}
+
+.sect-2 ul{
+	position: relative;
+	font-size: 1.2rem;
+}
+
+.sect-2 ul li{
+	left: 0;
+	transition: 0.25s;
+	position: relative;
+	list-style: disc;
+	list-style-position: outside;
+	margin: 4px 0px 0px;
+	padding: 5px 3vw 5px;
+	padding-left: 4px;
+}
+
+.sect-2 ul li:hover{
+	list-style: circle;
+}
+
+.bargo{
+	margin: -10px 0px 0px;
+}
+
+.bargo li{
+	list-style: decimal-leading-zero;
+	padding: 5px;
+	margin: 0px 10vw 0px;
+}
+
+.bargo li:hover{
+	list-style: square;
+}
+
+/*Fancy Stuff*/
+@keyframes focusing{
+	0%{
+		outline: 2px solid transparent;
+	}
+	100%{
+		outline: 3px solid orange;
+	}
+}
+
+.bargo{
+	margin: -40px 0px 0px;
+	padding: 10px 2.5% 3%;
+}
+
+/* 2K+ MONITORS */
+@media screen and (orientation: landscape) and (width >= 1920px){
+	.container-cl{
+		grid-template-columns: auto auto auto auto auto;
+	}
+	.container-cl a:hover{
+		transform: translateY(-10px);
+		background: transparent;
+		box-shadow: 0px 0px 20px azure;
+		transition: 0.1s;
+	}
+	.course-list h3:hover::after{
+		transform: scaleX(1);
+	}
+	.bargo li {
+		position: relative;
+		padding: 5px;
+		list-style: none;
+		font-size: 1.25rem;
+	}
+	.bargo li::before {
+		content: '';
+		background-image: url('https://i.ibb.co/vVvg3xC/Ragh.webp');
+		background-size: contain;
+		background-repeat: no-repeat;
+		display: inline-flex;
+		width: var(--li-icon);
+		height:  var(--li-icon);
+		vertical-align: text-top;
+	}
+}
+
+@media screen and (orientation: portrait) and (max-width: 1080px){
+	.container-cl{
+		grid-template-columns: auto auto;
+	}
+	.sect-2 ul li:hover{
+		left: 0px;
+	}
+	h3{
+		text-decoration: underline;
+		text-underline-offset: 10px;
+	}
+	.bargo li:hover{
+		list-style: decimal-leading-zero;
+	}
+}
+
+@media screen and (orientation: landscape) and (max-width: 786px){
+	.container-cl{
+		grid-template-columns: auto auto auto;
+	}
+}

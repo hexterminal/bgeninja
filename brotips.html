@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style3.css">
+	<link rel="stylesheet" type="text/css" href="code/vs2015.css">
+	<link rel="icon" type="image/x-icon" href="img/bgeninja.ico">
+	<meta property="og:title" content="BGENinja">
+  	<meta property="og:description" content="Random protips on the go!">
+  	<meta property="og:url" content="https://hexterminal.github.io/bgeninja/">
+  	<meta property="og:site_name" content="BGENinja">
+  	<meta property="og:image" content="https://hexterminal.github.io/bgeninja/img/bgeninja.ico">
+	<meta property="og:image:secure_url" content="https://hexterminal.github.io/bgeninja/img/bgeninja.ico">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta property="og:image:width" content="400">
+	<meta property="og:image:height" content="300">
+	<title>BGENinja - Brotips</title>
+</head>
+<body>
+	<h1>Brotips</h1>
+	<p id="desc">Random protips on the go!</p>
+	<section>
+		<ul style="list-style: none; margin: 0px;" id="brotips">
+			<li id="1">
+				<h3>Brotip #1</h3>
+				<p>
+					Hover your mouse wherever possible in this site, there are hidden tresures inside<span title="nice, this maybe your first treasure">.</span>
+				</p>
+			</li>
+			<li id="2">
+				<h3>Brotip #2</h3>
+				<p>
+					Use .DDS files for faster performance, it does improve it.
+				</p>
+			</li>
+			<li id="3">
+				<h3>Brotip #3</h3>
+				<p>
+					Turn on <span class="mono">Static Shadow</span> when your objects in the scene are not moving.
+					You can turn it off in the light settings.
+					<figure style="width: 25%;">
+						<img src="https://u.cubeupload.com/ropap66508/brostaticshadow.jpg" loading="lazy">
+						<figcaption>Static Shadow Enabled</figcaption>
+					</figure>
+				</p>
+			</li>
+			<li id="4">
+				<h3>Brotip #4</h3>
+				<p>
+					<span class="range">Range Engine</span>: Use <span class="mono">deltaTime()</span> when you scene's FPS is fluctuating.
+					This can help the object move with same speed no matter how much the framerate is.
+				</p>
+			</li>
+			<li id="5">
+				<h3>Brotip #5</h3>
+				<p>
+					Don't use <span class="mono">Occlusion Culling</span>, it wastes your CPU.
+				</p>
+			</li>
+			<li id="6">
+				<h3>Brotip #6</h3>
+				<p>
+					Don't create 9999+ files for python stuff, it's cancer.
+					Instead put all the stuff that runs in a loop inside a looping function
+					and put stuff the runs once in a function that runs once as a <b>single file</b> like this.
+				</p>
+				<pre><code class="language-python">def init(cont):
+    if "init" not in own or own["init"] != True: #If init property exists or if it's not true
+    	own["init"] = True
+    	#your stuff that must be added once goes here
+
+def loop(cont):
+	if own.sensors["forward"].positive:
+		own.applyMovement((0,1,0), 1)
+		#code that must run in a loop goes here</code></pre>
+				<p>
+					Or you can run the whole code in a loop and put the stuff that runs once under an <span class="mono">if</span> condition like this.
+				</p>
+				<pre><code class="language-python">def loop(cont):
+	if "init" not in own or own["init"] == False:
+		#put stuff that runs once, intend for if condition.
+	#put stuff that runs in a loop here, intend for function.</code></pre>
+			</li>
+			<li id="7">
+				<h3>Brotip #7</h3>
+				<p>
+					When you're trying to change the material color with python,
+					turn off <span class="mono">Material</span> under <span class="mono">Constant Values</span>
+					in <b>Material</b> settings. Or else your material values won't change.
+				</p>
+				<figure style="width:40%;">
+					<img src="https://u.cubeupload.com/ropap66508/turnoffmaterialconst.jpg" loading="lazy">
+					<figcaption>Constant value for Material is turned off for python accessing</figcaption>
+				</figure>
+			</li>
+			<li id="8">
+				<h3>Brotip #8</h3>
+				<p>
+					When converting <span class="mono">Text</span> object to <span class="mono">Mesh</span>,
+					add a <span class="mono">Decimate Modifier</span> to reduce the face count of the mesh.
+					Because having an optimized geometry can improve the performance, homie!
+				</p>
+				<figure>
+					<img src="https://u.cubeupload.com/ropap66508/Screenshot645.png" loading="lazy">
+					<figcaption>Before Decimate</figcaption>
+				</figure>
+				<figure>
+					<img src="https://u.cubeupload.com/ropap66508/Screenshot646.png" loading="lazy">
+					<figcaption>After Decimate</figcaption>
+				</figure>
+				<p>
+					Set the Decimate mode to <span class="mono">Planar</span>.
+					Convert the text object to mesh if it's not a mesh as you can't apply modifiers to text objects.
+					And also set the collision to <span class="mono">No Collision</span>.
+				</p>
+			</li>
+			<li id="9">
+				<h3>Brotip #9</h3>
+				<p>
+					When changing an object's color with
+					<span class="mono">KX_GameObject.color</span>, enable <b>Object Color</b>
+					in the Materials menu -> Options. You also need to have a material
+					assigned to that object.
+				</p>
+				<figure>
+					<img src="" loading="lazy">
+					<figcaption>Object Color enabled</figcaption>
+				</figure>
+			</li>
+			<li>
+				<h3>Brotip #10</h3>
+				<p>
+					You can access every objects in the scene without using
+					<span class="mono">bge.logic.getCurrentScene()</span> by
+					using <span class="mono">owner.scene.object</span>
+				</p>
+			</li>
+		</ul>
+	</section>
+	<style type="text/css">
+		#desc{
+			line-height: 2em;
+		}
+		#brotips h3{
+			line-height: 2em;
+		}
+		#brotips h3, p{
+			margin-top:    0px;
+			margin-bottom: 0px;
+			margin-left:   10% !important; /*there is some issue here*/
+			margin-right:  10% !important;
+		}
+		#brotips li{
+			transition:    0.2s;
+			padding:       5px;
+			margin-left:   10%;
+			margin-right:  10%;
+			border:        2px solid transparent;
+			border-radius: 7px;
+		}
+		#brotips li:hover{
+			background: rgba(255, 255, 255, 0.03);
+		}
+		#brotips figure{
+			width: inherit;
+		}
+		@media screen and (orientation: portrait) and (max-width: 1080px){
+			#brotips{
+				box-shadow: none;
+				background: inherit;
+			}
+			#brotips h3{
+				line-height: 2em;
+			}
+		}
+	</style>
+	<script type="text/javascript" src="code/randomize_list.js"></script>
+	<script src="code/highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
+	<!-- <script type="text/javascript" src="code/syntax.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,122 @@
+	<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Python - 2</title>
+</head>
+<body>
+	<h1>2 - Transforming Object</h1>
+	<h3>Intro</h3>
+	<p>
+		Using python you can do more advanced stuff.
+		We'll looking at the game engine's transforming functions.
+	</p>
+	<h3>Requirements</h3>
+	<p>
+		<a href="https://rangeengine.tech/" target="_blank">Range Engine 1.2+</a> or <a href="https://upbge.org/" target="_blank">UPBGE 2.5b</a><a href="https://kitsuystudio.itch.io/upbge-026" target="_blank">+</a>
+	</p>
+
+	<!-- explantions -->
+	<h3>Diving into code</h3>
+	<h5>Local</h5>
+	<p>
+		<span class="mono">localPosition</span>, <span class="mono">localOrientation</span> and <span class="mono">localScale</span>
+	</p>
+	<h5>World</h5>
+	<p>
+		<span class="mono">worldPosition</span>, <span class="mono">worldOrientation</span> and <span class="mono">worldScale</span>
+	</p>
+	<h5>What were those above</h5>
+	<p>
+		If you're wondering what were those <u>localPosition, worldOrientation</u>, etc, they are noting but functions used to transform the objects using python.
+		With this you can have control of objects and move, rotate and scale them in <span title="or local">global</span> and local axis.
+	</p>
+	<h5>What the heck is local and world</h5>
+	<p>
+		#explanation goes here for world
+	</p>
+	<figure>
+		<img src="https://u.cubeupload.com/ropap66508/dBkaAT.gif" loading="lazy">
+		<figcaption>The default cube being moved in world axis</figcaption>
+	</figure>
+	<p>
+		exp for local
+	</p>
+	<figure>
+		<img src="https://u.cubeupload.com/ropap66508/lUPZ1l.gif" alt="local" loading="lazy">
+		<figcaption>The default cube being moved in local axis</figcaption>
+	</figure>
+	<!-- moving objects -->
+	<h3>Moving objects with python</h3>
+	<h5>In world axis</h5>
+	<p>
+		I hope you understood what local and world axis mean, now let's jump to python code.
+		Open up the <span class="mono">Text Editor</span> (which is opened be default in Range and UPBGE).
+		If it's not there, change the editor type to Text Editor.
+		We'll be now changing the position of our default cube in world axis.
+		let's import the <span class="mono">Range</span> module and get our python controller and owner like so.
+	</p>
+	<pre><code class="language-python">import Range
+own = Range.logic.getCurrentController()</code></pre>
+	<p>
+		And then we bring the function <span>worldPosition</span>, and set the values to <span class="mono">[3,5,9]</span> something like this: <span class="mono">worldPosition = [3,5,9]</span>.
+		So the full code looks like this
+	</p>
+	<pre><code class="language-python">import Range
+own = Range.logic.getCurrentController()
+own.worldPosition = [3,5,9]</code></pre>
+	<p>
+		Remeber, you gotta put <span class="mono">own</span> before almost any functions so the game engine know
+		which object to move, or it won't move any objects.
+	</p>
+	<h5>Connecting with logic bricks</h5>
+	<p>
+		Bring a keyboard sensor and a <span class="mono">Python</span> controller.
+		Select the script where we did all those moving the cube thing.
+	</p>
+	<figure>
+		<img src="https://u.cubeupload.com/ropap66508/I1UxWx.gif" loading="lazy">
+		<figcaption>Connecting the bricks and selecting the script</figcaption>
+	</figure>
+	<p>
+		Connect the bricks and run the game.
+		Press the key which you assigned for the keyboard sensor and then the cube moves!
+	</p>
+	<figure>
+		<iframe src="https://www.youtube.com/embed/XU0AauWyajs?si=RF2LmLAz77yHlNk6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		<figcaption>Changing cube's position with python</figcaption>
+	</figure>
+	<h5>in local axis</h5>
+	<p>
+		Now, let's try moving the cube in local axis. Rotate the cube in any degrees and replace the <span class="mono">worldPosition</span> with <span class="mono">localPosition</span>.
+	</p>
+	<p>
+		You may wonder "wait why isnt my local position changing?" The problem with that is... your object's rotation needs to be relative to the parent object.
+		Like if your parent object's orientation is <span class="mono">[23,45,90]</span> and if you use <span class="mono">localPosition</span> on your child object whose rotation is <span class="mono">[23,45,90]</span> too,
+		the changed location will be in local axis.
+	</p>
+	<figure>
+		<video src="https://cdn.discordapp.com/attachments/915212337995186236/1242035492472619040/localPosition.mp4?ex=664c5f31&is=664b0db1&hm=05ccb3c934a585ce6f822f459ef5cfe58a4760985c5c9f05a73e718012c47af7&" preload="none" controls poster="https://rangeengine.tech/img/range15splash.png"></video>
+		<figcaption>How "localPosition" works</figcaption>
+	</figure>
+	<p>
+		The bricks was setup like this: <span class="mono" style="white-space: break-spaces;">Always sensor <---------> Python controller</span>.
+	</p>
+	<h5>Alternative setup for localPosition</h5>
+	<p>
+		You can also use <span class="mono">applyMovement</span> with an always sensor having true level triggering turned off.
+		So the code looks like this.
+	</p>
+	<pre><code class="language-python">import Range
+own = Range.logic.getCurrentController()
+own.applyMovement([3,5,9], True)</code></pre>
+	<p>
+		We're applying movement to a certain vector in local axis. You can use <span class="mono">0,1</span> instead of <span class="mono">True, False</span>.
+		<u>0 = False</u>, <u>and 1 = True</u>. Btw <a href="https://drive.google.com/file/d/1_co8rOhQdkpLjgG__rOc3fT1G1qxpV3F/view?usp=sharing" target="_blank">here</a> is the project file.
+	</p>
+	<script src="../../code/highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
+	<script type="text/javascript" src="../../code/syntax.js"></script>
+</body>
+</html>

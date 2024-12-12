@@ -1,0 +1,989 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"hre",
+				"href"
+			],
+			[
+				"pro",
+				"prosncons"
+			],
+			[
+				"add",
+				"padding-top"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"dec",
+				"decimal"
+			],
+			[
+				"de",
+				"decimal-leading-zero"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"lis",
+				"list-style"
+			],
+			[
+				"under",
+				"text-underline-offset"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"align",
+				"align-content"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"posi",
+				"position"
+			],
+			[
+				"cont",
+				"content"
+			],
+			[
+				"whi",
+				"white"
+			],
+			[
+				"marin",
+				"margin"
+			],
+			[
+				"jus",
+				"justify-content"
+			],
+			[
+				"just",
+				"justify-content"
+			],
+			[
+				"mari",
+				"margin"
+			],
+			[
+				"na",
+				"nav-bar-nojs"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"dark",
+				"darkmagenta"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"decoration",
+				"text-decoration-skip"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"styl",
+				"style"
+			],
+			[
+				"sec",
+				"section"
+			],
+			[
+				"ro",
+				"table-row"
+			],
+			[
+				"in",
+				"inherit"
+			],
+			[
+				"rgb",
+				"rgb()"
+			],
+			[
+				"red",
+				"indianred"
+			],
+			[
+				"oragn",
+				"orangered"
+			],
+			[
+				"m",
+				"main\tmain()"
+			],
+			[
+				"fig",
+				"figcaption"
+			],
+			[
+				"fi",
+				"figcaption"
+			],
+			[
+				"overflow",
+				"overflow-y"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"flex",
+				"flex-shrink"
+			],
+			[
+				"fle",
+				"flex-wrap"
+			],
+			[
+				"al",
+				"align-content"
+			],
+			[
+				"bo",
+				"text-bottom"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"ver",
+				"overflow-x"
+			],
+			[
+				"a",
+				"table-row"
+			],
+			[
+				"s",
+				"contents"
+			],
+			[
+				"over",
+				"overflow"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"spa",
+				"space-around"
+			],
+			[
+				"ce",
+				"space-evenly"
+			],
+			[
+				"ali",
+				"align-content"
+			],
+			[
+				"border",
+				"border-color"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"b",
+				"b"
+			],
+			[
+				"re",
+				"rebeccapurple"
+			],
+			[
+				"bord",
+				"border-left"
+			],
+			[
+				"te",
+				"text-top"
+			],
+			[
+				"borde",
+				"border"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"i",
+				"initial"
+			],
+			[
+				"pixel",
+				"Pixelate"
+			],
+			[
+				"li",
+				"link"
+			],
+			[
+				"or",
+				"orangered"
+			],
+			[
+				"sect",
+				"sect-4"
+			],
+			[
+				"w",
+				"row"
+			],
+			[
+				"col",
+				"column-reverse"
+			],
+			[
+				"blue",
+				"royalblue"
+			],
+			[
+				"darkgree",
+				"darkgreen"
+			],
+			[
+				"green",
+				"forestgreen"
+			],
+			[
+				"gree",
+				"greenyellow"
+			],
+			[
+				"im",
+				"iframe"
+			],
+			[
+				"rg",
+				"rgb()"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"bl",
+				"skyblue"
+			],
+			[
+				"gre",
+				"green"
+			],
+			[
+				"text-de",
+				"text-decoration"
+			],
+			[
+				"row",
+				"table-row-group"
+			],
+			[
+				"table",
+				"table-column-group"
+			],
+			[
+				"align-",
+				"align-content"
+			],
+			[
+				"n",
+				"unset"
+			],
+			[
+				"paddin",
+				"padding-bottom"
+			],
+			[
+				"shadow",
+				"text-shadow"
+			],
+			[
+				"mas",
+				"mask-image"
+			],
+			[
+				"gr",
+				"greenyellow"
+			],
+			[
+				"margni",
+				"margin-left"
+			],
+			[
+				"padding",
+				"padding-right"
+			],
+			[
+				"nor",
+				"normal"
+			],
+			[
+				"wrap",
+				"word-wrap"
+			],
+			[
+				"style",
+				"list-style-type"
+			],
+			[
+				"darkb",
+				"darkslateblue"
+			],
+			[
+				"bakc",
+				"background-image"
+			],
+			[
+				"fex",
+				"flex-flow"
+			],
+			[
+				"gi",
+				"figcaption"
+			],
+			[
+				"u",
+				"u"
+			],
+			[
+				"z",
+				"col-resize"
+			],
+			[
+				"alig",
+				"align-items"
+			],
+			[
+				"co",
+				"cover"
+			],
+			[
+				"un",
+				"underline"
+			],
+			[
+				"tran",
+				"transform"
+			],
+			[
+				"tr",
+				"transform"
+			],
+			[
+				"shad",
+				"box-shadow"
+			],
+			[
+				"margn",
+				"margin-top"
+			],
+			[
+				"fil",
+				"filter"
+			],
+			[
+				"audio",
+				"audio"
+			],
+			[
+				"vide",
+				"video"
+			],
+			[
+				"vid",
+				"video"
+			],
+			[
+				"darkgr",
+				"darkslategray"
+			],
+			[
+				"c",
+				"chocolate"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"la",
+				"loading"
+			],
+			[
+				"sca",
+				"scale()"
+			],
+			[
+				"trasn",
+				"transform"
+			],
+			[
+				"sc",
+				"scale()"
+			],
+			[
+				"trans",
+				"transition"
+			],
+			[
+				"tet",
+				"text-shadow"
+			],
+			[
+				"t",
+				"target"
+			],
+			[
+				"backgr",
+				"background-size"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"backg",
+				"background-attachment"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"f",
+				"figcaption"
+			],
+			[
+				"ligh",
+				"lightgray"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/Python3.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Python3.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/User/Python3.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"theme",
+				"Terminus Utilities: Select Theme"
+			],
+			[
+				"install theme",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"package insl",
+				"Package Control: Install Package"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"side ",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"color",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"colorsub",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"col",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"colo",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Enable Package"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"vpf",
+				"View Package File"
+			],
+			[
+				"jedi",
+				"SublimeJedi: Show Docstring"
+			],
+			[
+				"syntaxja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"text",
+				"Set Syntax: reStructuredText"
+			],
+			[
+				"python",
+				"Set Syntax: Python"
+			],
+			[
+				"c++",
+				"Set Syntax: C++"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"pl",
+				"Permute Lines: Shuffle"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 242.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/python"
+	],
+	"file_history":
+	[
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/python/5.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/python/3.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/style3.css",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/python/4.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/index.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/advanced/intro.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/python/0.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/python/1.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/python/intro.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/python/1 - Copy.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/style2.css",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/style.css",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/about.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/contribute.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/advanced/compile-upbge.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/advanced/change-splash.html",
+		"/C/Users/Jeba/Downloads/upbge-fps-setup-master/FPS_setup.py",
+		"/C/Users/Jeba/Desktop/test.cpp",
+		"/C/Users/Jeba/Documents/CODING/C/yquake2-master/src/backends/windows/system.c",
+		"/C/Users/Jeba/Documents/CODING/C/yquake2-master/src/backends/windows/main.c",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/tutorials/character-physics.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/tutorials/intro.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/tutorials/py-toggle-buttons.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/tutorials/lb-screenshot.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/py-toggle-buttons.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/tutorials/lerp-mathutils.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/tutorials/py-screenshot.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/tutorials/pixelate-textures.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/tutorials/file-operations.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/tutorials/lb-toggle-buttons.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/tutorials/py-ingame-cheats.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/tutorials/set-resolution.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/code/syntax.js",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/code/slides.js",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/tutorials/blurred-menu.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/logic-bricks/11.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/python/7.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/python/2.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/code/smooth_criminal.js",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/brotips.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/tutorials/check-ray-length.html",
+		"/C/Users/Jeba/Documents/BGE/range/lightning_switch/c/m.py",
+		"/C/Users/Jeba/Documents/CODING/C++/game_engine/upbge/source/blender/makesrna/intern/rna_material.c",
+		"/C/Users/Jeba/Documents/CODING/C++/game_engine/upbge/release/datafiles/locale/ar/LC_MESSAGES/blender.mo",
+		"/C/Users/Jeba/Documents/CODING/C++/game_engine/upbge/extern/lzo/minilzo/README.LZO",
+		"/C/Users/Jeba/Documents/CODING/C++/game_engine/upbge/source/gameengine/Ketsji/KX_CameraActuator.cpp",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/code/index.js",
+		"/C/Users/Jeba/wifite2/tests/test_Airmon.py",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/404.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/logic-bricks/intro.html",
+		"/C/Users/Jeba/Documents/CODING/C++/test.cpp",
+		"/C/Users/Jeba/Documents/CODING/C++/upbge_source_code/source/gameengine/Ketsji/KX_GameObject.cpp",
+		"/C/Users/Jeba/Documents/CODING/C++/test2.cpp",
+		"/C/Users/Jeba/Documents/CODING/Python/INDIAN_CRINGE_VIRUS/INDIAN_CRINGE_VIRUS.py",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/logic-bricks/13.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/logic-bricks/12.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/logic-bricks/9.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/logic-bricks/8.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/logic-bricks/10.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/logic-bricks/7.html",
+		"/C/Users/Jeba/Documents/CODING/C++/upbge_source_code/source/gameengine/Expressions/intern/PyObjectPlus.cpp",
+		"/C/Users/Jeba/Documents/CODING/C++/upbge_source_code/source/gameengine/Common/CM_Thread.cpp",
+		"/C/Users/Jeba/Documents/CODING/C++/upbge_source_code/source/gameengine/BlenderRoutines/BL_KetsjiEmbedStart.cpp",
+		"/C/Users/Jeba/Documents/CODING/Python/lol.py",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/code/randomize_list.js",
+		"/C/Users/Jeba/Downloads/STAR_SHIP_TOP_DOWN_MOUSE_GAME_KIT/STAR_FIGHTER_SHIP_GAME/game_files/c/code.py",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/glsl/intro.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/logic-bricks/3.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/logic-bricks/6.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/logic-bricks/exporting-your-game.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/logic-bricks/5.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/logic-bricks/4.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/logic-bricks/2.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/logic-bricks/1.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/courses/logic-bricks/intro.html.html",
+		"/C/Users/Jeba/Documents/CODING/Python/settings",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/About.html",
+		"/C/Users/Jeba/Documents/CODING/HTML/bgeninja/brotip.html",
+		"/C/Users/Jeba/Documents/stats.css",
+		"/C/Users/Jeba/Documents/stats.html",
+		"/C/Users/Jeba/Downloads/shitbot/sms.py",
+		"/C/Users/Jeba/Downloads/shitbot/long.py",
+		"/C/Users/Jeba/Documents/CODING/C/yquake2-master/src/game/g_phys.c",
+		"/C/Users/Jeba/Documents/CODING/C/yquake2-master/src/game/g_ai.c",
+		"/C/Users/Jeba/Downloads/code.py",
+		"/C/Users/Jeba/Downloads/RC_ROBOT_FIGHTER_TV_SHOW_GAME/game_files/c/code.py",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Users/Jeba/AppData/Roaming/Sublime Text/Packages/Colorsublime/Colorsublime.sublime-settings",
+		"/C/Users/Jeba/AppData/Roaming/Sublime Text/Packages/User/Colorsublime.sublime-settings",
+		"/C/Users/Jeba/Documents/CODING/Python/Python-Algorithm/ciphers/autokey.py",
+		"/C/Users/Jeba/Documents/BGE/lightning_switch/c/m.py",
+		"/C/Users/Jeba/AppData/Roaming/Sublime Text/Packages/Jedi - Python autocompletion/sublime_jedi.sublime-settings",
+		"/C/Users/Jeba/Documents/CODING/HTML and CSS/jones/index.html",
+		"/C/Users/Jeba/Documents/CODING/HTML and CSS/jones/style.css",
+		"/C/Users/Jeba/Documents/CODING/HTML and CSS/stolenfromweb/Rickrack - Free and Open-Source Color Palette Generator_files/rrstyles.css",
+		"/C/Users/Jeba/Documents/CODING/HTML and CSS/stolenfromweb/Rickrack - Free and Open-Source Color Palette Generator.html",
+		"/C/Users/Jeba/Documents/CODING/HTML and CSS/jones/blog.html",
+		"/C/Program Files (x86)/Quake 4/q4base/Quake4Config.cfg",
+		"/C/Users/Jeba/Documents/CODING/HTML and CSS/testwebsite/style.css",
+		"/C/Users/Jeba/Documents/CODING/HTML and CSS/testwebsite/design_assets.html",
+		"/C/Users/Jeba/Documents/CODING/HTML and CSS/testwebsite/index.html",
+		"/C/Users/Jeba/Documents/CODING/HTML and CSS/testwebsite/about.html",
+		"/C/Users/Jeba/Documents/CODING/HTML and CSS/testwebsite/coding.html",
+		"/C/Users/Jeba/Documents/BOOKS/Poisonous Python. Coding malware in Python_ a locker, an encryptor, and a virus – HackMag_files/xmd.css",
+		"/C/Users/Jeba/Documents/CODING/HTML and CSS/testwebsite/faq.html",
+		"/C/Users/Jeba/Documents/CODING/HTML and CSS/template/index.html",
+		"/C/Users/Jeba/Documents/CODING/HTML and CSS/template/default.css",
+		"/C/Users/Jeba/Documents/CODING/HTML and CSS/style.css",
+		"/C/Users/Jeba/Documents/CODING/HTML and CSS/index.html",
+		"/C/Users/Jeba/Documents/CODING/Python/INDIAN_CRINGE_VIRUS/Virus_UI.py",
+		"/C/Users/Jeba/AppData/Roaming/Sublime Text/Packages/User/C++.sublime-build",
+		"/C/Users/Jeba/Documents/CODING/C++/outputf.out",
+		"/C/Users/Jeba/Documents/CODING/C++/inputf.in",
+		"/C/Users/Jeba/AppData/Roaming/Sublime Text/Packages/User/sublime_jedi.sublime-settings",
+		"/C/Users/Jeba/AppData/Roaming/Sublime Text/Packages/Jedi - Python autocompletion/Default.sublime-mousemap",
+		"/C/Users/Jeba/Documents/CODING/Python/INDIAN_CRINGE_VIRUS/img/Virus_UI.py",
+		"/C/Users/Jeba/Documents/CODING/Python/matrix.pyw",
+		"/C/Users/Jeba/Documents/CODING/Python/practised with class lol.py",
+		"/C/Users/Jeba/AppData/Roaming/Sublime Text/Packages/User/Python3.sublime-build",
+		"/C/Users/Jeba/AppData/Roaming/Sublime Text/Packages/Python/Python.sublime-build",
+		"/C/Users/Jeba/Documents/CODING/Python/Virus_UI.py",
+		"/C/Users/Jeba/AppData/Roaming/Sublime Text/Packages/User/SublimeREPL.sublime-settings",
+		"/C/Users/Jeba/AppData/Roaming/Sublime Text/Packages/SublimeREPL/SublimeREPL.sublime-settings",
+		"/C/Users/Jeba/AppData/Roaming/Sublime Text/Packages/Jedi - Python autocompletion/Default.sublime-keymap",
+		"/C/Users/Jeba/Documents/attack_sm/cmd/asciiart.py",
+		"/C/Users/Jeba/Documents/attack_sm/cmd/main.py",
+		"/C/Users/Jeba/Documents/attack_sm/dependencies/windscribe-cli.xbps"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 619.0,
+		"where_history":
+		[
+			"C:\\Users\\Jeba\\Documents\\CODING\\HTML\\bgeninja,<project filters>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"hover",
+			"transfor",
+			"round",
+			"recc",
+			"margin",
+			"progress",
+			"button",
+			"recc",
+			"animation",
+			"anima",
+			"link",
+			"list-st",
+			"list",
+			"width",
+			"h3",
+			"dawg-serious",
+			"fade",
+			"text-shadow",
+			"type",
+			"nav",
+			"na",
+			"nav",
+			"sect",
+			"cont",
+			"sect-",
+			"sect",
+			".sect-",
+			"sect-",
+			"progr",
+			"sect-2",
+			"button",
+			"sect-2",
+			"p",
+			"sect-2",
+			"target",
+			"u",
+			"data",
+			"warning",
+			"note",
+			"osversioninfo"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": true,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": false,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 209.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.LSP Log Panel":
+	{
+		"height": 0.0
+	},
+	"output.Terminus":
+	{
+		"height": 132.0
+	},
+	"output.Terminus Build Results":
+	{
+		"height": 154.0
+	},
+	"output.diagnostics":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 32.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/C++.sublime-build",
+	"project": "bgeninja.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 281.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 347.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 1
+	}
+}
