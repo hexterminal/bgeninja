@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mouse</title>
+</head>
+<body>
+	<h1>Mouse</h1>
+	<p>
+		In this lesson we'll be capturing mouse input with python inside the game engine.<br>
+		To check if the mouse input is being captured we'll make a button and capture the mouse
+		location.
+	</p>
+	<h3>Tracking our mouse position</h3>
+	<p>
+		Create two properties in the default cube named as
+		<span class="mono">mouseX</span> and <span class="mono">mouseY</span>
+		leave it as floating point integers and to the coding part...<br>
+		Import the game engine module, make a function that runs in a loop,
+		define the controller and owner object.<br>
+		We now gotta tell what our previously created properties are going to do,
+		so now we'll assign both of them to <span class="mono">bge.logic.mouse.position</span>
+		and these properties lets us know the position of our mouse.
+	</p>
+<pre><code>try:
+    import bge # Blender Game Engine
+except:
+    import Range as bge
+
+cont = bge.logic.getCurrentController() # the script
+
+def main(cont): # the start
+    own = cont.owner # scripts object
+    mouse = bge.logic.mouse # mouse list
+    
+    # Tracking mouse position
+    own["mouseX"], own["mouseY"] = mouse.position</code></pre>
+    <p>
+    	And the logic bricks setup looks like this.
+    </p>
+    <figure>
+    	<img src="https://i.postimg.cc/gJ6ZD3NN/image.png" alt="Logic Bricks setup for mouse over">
+    	<figcaption>Logic bricks setup</figcaption>
+    </figure>
+	<h3>Method 1</h3>
+	<p>
+		To check the mouse input we check the mouse input in the
+		<span class="mono">.activeInputs</span> just like we did in last lesson.
+		So we do something like this.
+	</p>
+<pre><code>if 116 in mouse.activeInputs:
+    print("Less Gooo")
+
+# or an alternative way of doing it is like below
+if bge.events.LEFTMOUSE in mouse.activeInputs:
+    print("Less Gooo")</code></pre>
+    <p>
+    	So for left and right clicks we do the following.
+    </p>
+<pre><code>if 116 in mouse.activeInputs:
+    print("Less Go Left!")
+if 118 in mouse.activeInputs:
+    print("Less Go Right!")</code></pre>
+    <p>
+    	We have our setup working, if necessary feel free to check the
+    	<a href="https://rangeengine.tech/api/15/html/api/bge.events.html#mouse-keys" target="_blank">
+    	Range Engine documentation</a> to check the keycodes for the mouse input and
+    	<a href="https://rangeengine.tech/api/15/html/api/bge.events.html#mouse-keys">download the project file</a>.
+    </p>
+	<!-- Intented for test purposes, some CSS code is from MDN docs -->
+	<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details -->
+	<!-- <details>
+		<summary>some element</summary>
+		<p>this is something lol</p>
+	</details> -->
+	<h3>Method 2</h3>
+	<p>
+		Pending... Please wait I'll finish this as soon as possible.
+	</p>
+	<script src="../../code/highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
+	<script type="text/javascript" src="../../code/syntax.js"></script>
+</body>
+</html>

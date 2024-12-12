@@ -9,8 +9,8 @@
 	<h1>Keyboard</h1>
 	<p>
 		In this lesson we'll be making use of our keyboard using python.
-		There are different way of checking the keyboard input,
-		and we'll take a look at some of them.
+		There are different ways of checking the keyboard input,
+		and we'll take a look at two of them.
 	</p>
 	<h3>Method 1</h3>
 	<p>
@@ -117,7 +117,88 @@ own.applyTorque((0.0, 0.0, zt), True) # True = local</code></pre>
 		<a href="https://drive.google.com/file/d/1_klemHNBWAH9iM75y62QwxICNnuaqb2e/view?usp=sharing" target="_blank">Download the file.</a>
 	</p>
 	<h3>Method 2</h3>
-	<p>Sorry... I will complete this part as soon as possible :(</p>
+	<p>
+		Now we'll be doing the keyboard input by checking the
+		<span class="mono">bge.logic.keyboard.events</span> dictionary.<br>
+		Make import the game engine module, create a function and name it as <b>main</b>
+		or whatever you like. I think naming it as main is good, so we'll go with it and
+		we this time create a list for movement and rotation.<br>
+		Oh we also need to define what our <span class="mono">bge.logic.keyboard</span>
+		is going to be, we'll name it as <b>keyboard</b>. We need a speed variable which
+		is not going to be changed, so it will be constant.
+	</p>
+	<pre><code>try:
+    import bge
+except:
+    import Range as bge
+
+cont = bge.logic.getCurrentController()
+
+def main(cont):
+    own = cont.owner
+    keyboard = bge.logic.keyboard # Get the keyboard events
+
+    movement = [0, 0, 0] # elements are considered as X, Y, Z
+    rotation = [0, 0, 0]
+
+    SPEED = 10 # Constant value</code></pre>
+    <p>
+    	Declaring this in uppercase doesn't prevent us from changing the value,
+    	its just meant to be a "pythonic" way.<br>
+    	Now to the logic part, we check for user input like this.
+    </p>
+<pre><code class="language-python">if bge.logic.KX_INPUT_ACTIVE in keyboard.inputs[bge.events.WKEY].status:
+    movement[1] += speed # change Y axis value of movement
+if bge.logic.KX_INPUT_ACTIVE in keyboard.inputs[bge.events.SKEY].status:
+    movement[1] -= speed
+if bge.logic.KX_INPUT_ACTIVE in keyboard.inputs[bge.events.AKEY].status:
+    rotation[2] += speed # change Z axis value of rotation
+if bge.logic.KX_INPUT_ACTIVE in keyboard.inputs[bge.events.DKEY].status:
+    rotation[2] -= speed</code></pre>
+    <p>
+    	In this code we're basically checking for an active input in the list
+    	<span class="mono">keyboard.inputs[bge.events.&ltSOMEKEY&gt].status</span>
+    	which can either contain <span class="mono">bge.logic.KX_INPUT_NONE</span> or
+    	<span class="mono">bge.logic.KX_INPUT_ACTIVE</span>. If so move our object.<br>
+    	And finally for movement we do the following.
+    </p>
+<pre><code>own.applyForce(movement, True)
+own.applyTorque(rotation, True)</code></pre>
+	<p>
+		<span class="mono">.applyForce()</span> and <span class="mono">.applyTorque()</span>
+		accepts list or tuple, as our <b>movement</b> and <b>rotation</b> is already a list
+		we'll pass it like that.<br>
+		Here goes the full code.
+	</p>
+<pre><code>try:
+    import bge
+except:
+    import Range as bge
+
+cont = bge.logic.getCurrentController()
+
+def main(cont):
+    own = cont.owner
+    keyboard = bge.logic.keyboard # Get the keyboard events
+
+    movement = [0, 0, 0]
+    rotation = [0, 0, 0]
+
+    SPEED = 10
+
+    # Check for user input
+    if bge.logic.KX_INPUT_ACTIVE in keyboard.inputs[bge.events.WKEY].status:
+        movement[1] += speed
+    if bge.logic.KX_INPUT_ACTIVE in keyboard.inputs[bge.events.SKEY].status:
+        movement[1] -= speed
+    if bge.logic.KX_INPUT_ACTIVE in keyboard.inputs[bge.events.AKEY].status:
+        rotation[2] += speed
+    if bge.logic.KX_INPUT_ACTIVE in keyboard.inputs[bge.events.DKEY].status:
+        rotation[2] -= speed
+
+    own.applyForce(movement, True)
+    own.applyTorque(rotation, True)</code></pre>
+    <p><a href="https://drive.google.com/file/d/1MbuCBqBuVbQ5-eA3px2-Xu6okJmw6qfc/view?usp=sharing" target="_blank">Download the project file here</a>, have a nice day!</p>
 	<script src="../../code/highlight.min.js"></script>
 	<script>hljs.highlightAll();</script>
 	<script type="text/javascript" src="../../code/syntax.js"></script>
