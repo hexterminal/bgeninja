@@ -1,5 +1,7 @@
 :root{
 	--li-icon: 28px;
+	--main-margin: 10%;
+	--global-radius: 7px;
 }
 
 @font-face{
@@ -32,15 +34,26 @@ body::-webkit-scrollbar-thumb{
 
 .container-cl{
 	display: grid;
+/*	grid-template-columns: var(--grid-width) var(--grid-width) var(--grid-width) var(--grid-width);*/
 	grid-template-columns: auto auto auto auto;
-	justify-content: space-evenly;
-	align-content: center;
-	grid-gap: 50px;
-	margin-left: 5%;
-	margin-right: 5%;
+	justify-content: space-between;
+	grid-row-gap:    25px;
+	grid-column-gap: 15px;
+	margin: auto var(--main-margin);
 	padding: 0px;
-/*	flex-direction: row;*/
-/*	flex-wrap: wrap;*/
+}
+
+
+.container-cl a{
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	max-width: 15vw;
+	margin: 0px;
+	border: solid 2px;
+	border-radius: var(--global-radius);
+	box-shadow: 0px 0px 5px black;
 }
 
 .container-cl img{
@@ -53,21 +66,7 @@ body::-webkit-scrollbar-thumb{
     -ms-user-select: none;
     user-select: none;
     -webkit-user-drag: none;
-    border-radius: 10px;
-}
-
-.container-cl a{
-	list-style: none;
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	padding: 20px;
-	min-width: 0px;
-	max-width: 200px;
-	border: solid 2px;
-	border-radius: 10px;
-	transition: 0.25s;
-	box-shadow: 0px 0px 5px black;
+    border-radius: var(--global-radius);
 }
 
 .course-list a{
@@ -79,9 +78,10 @@ body::-webkit-scrollbar-thumb{
 	text-decoration: none;
 }
 
-.course-list p{
+.course-desc{
 	color: gray;
 	text-decoration: none;
+	margin: initial;
 }
 
 .ccl h5{
@@ -101,11 +101,15 @@ h3{
 
 h4{
 	font-size: 1.7rem;
-	margin-left: 5%;
-	margin-right: 5%;
+	margin-left:  var(--main-margin);
+	margin-right: var(--main-margin);
 }
 
-/*Numer thing*/
+p{
+	margin: 3% var(--main-margin) 3%;
+}
+
+/*Number thing*/
 span{
 	margin-right: 5px;
   	background: -webkit-linear-gradient(#fff700 0%, #fffa6e 35%, #9e9900 50%, #fff700 55%, #fff700 100%);
@@ -131,7 +135,6 @@ span:hover{
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	text-shadow: 0px 0px 10px black;
 	margin: 30px 0px 20px;
 }
 
@@ -181,7 +184,7 @@ span:hover{
 .bargo li{
 	list-style: decimal-leading-zero;
 	padding: 5px;
-	margin: 0px 10vw 0px;
+	margin: 0px var(--main-margin) 0px;
 }
 
 .bargo li:hover{

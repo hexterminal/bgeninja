@@ -1,5 +1,6 @@
 :root{
 	--main-margin: 10%;
+	--global-radius: 7px;
 }
 
 
@@ -29,12 +30,12 @@ body::-webkit-scrollbar-track{
 }
 
 figure{
-	position: relative;
-	max-width: 50%;
-	overflow: hidden;
-	margin: auto;
-	border: 1px solid;
+/*	margin: 0px var(--global-radius) 0px;*/
 	padding: 5px;
+	margin: auto;
+	max-width: calc(var(--global-radius) + 60%);
+	border: 1px solid;
+	border-radius: var(--global-radius);
 }
 
 figure .smol{
@@ -47,13 +48,12 @@ figure audio{
 	align-self: center;
 }
 
-figure img{
-	border-radius: 0px;
+figure img, video{
+	border-top-left-radius:  var(--global-radius);
+	border-top-right-radius: var(--global-radius);
 	position: relative;
 	display: flex;
-	opacity: 1;
-	width: 100%;
-	object-fit: contain;
+	width: -webkit-fill-available;
 }
 
 audio{
@@ -63,6 +63,8 @@ audio{
 }
 
 figcaption{
+	border-bottom-left-radius:  var(--global-radius);
+	border-bottom-right-radius: var(--global-radius);
 	background: black;
 	color: whitesmoke;
 	padding: 2px;
@@ -231,14 +233,10 @@ a:hover{
 .know, .note, .warning{
 	display: flex;
 	flex-flow: column;
-	margin-left: auto;
-	margin-right: auto;
-	width: 40%;
+	margin: 20px calc(var(--main-margin)*2) 20px;
 	border:  2px solid whitesmoke;
 	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), transparent);
 	border-radius: 5px;
-	margin-top: 20px;
-	margin-bottom: 20px;
 }
 
 .know p, .note p, .warning p{
@@ -304,6 +302,78 @@ details[open] summary{
 	margin-bottom: 0.5em;
 }
 
+video{
+	width: -webkit-fill-available;
+}
+
+[data-tooltip] {
+	--arrow-size: 10px;
+	position: relative;
+	z-index: 10;
+	display: inline-block; /* Ensure the element is inline-block to position correctly */
+}
+
+/* Positioning and visibility settings of the tooltip */
+[data-tooltip]:before,
+[data-tooltip]:after {
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	left: 50%;
+	bottom: calc(100% + var(--arrow-size));
+	pointer-events: none;
+	transition: 0.2s;
+	will-change: transform;
+}
+
+/* The actual tooltip with a dynamic width */
+[data-tooltip]:before {
+	content: attr(data-tooltip);
+	padding: 10px 18px;
+	min-width: 50px;
+	max-width: 300px;
+	width: max-content;
+	width: -moz-max-content;
+	border-radius: 6px;
+	font-size: 14px;
+	background-color: rgba(59, 72, 80, 0.9);
+	color: #fff;
+	text-align: left;
+	white-space: pre-wrap;
+	transform: translate(-50%,  calc(0px - var(--arrow-size))) scale(0.5);
+}
+
+/* Tooltip arrow */
+[data-tooltip]:after {
+	content: '';
+	border-style: solid;
+	border-width: var(--arrow-size) var(--arrow-size) 0px var(--arrow-size); /* CSS triangle */
+	border-color: rgba(55, 64, 70, 0.9) transparent transparent transparent;
+	transition-duration: 0s;
+	transform-origin: top;
+	transform: translateX(-50%) scaleY(0);
+}
+
+/* Tooltip becomes visible at hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+	visibility: visible;
+	opacity: 1;
+}
+/* Scales from 0.5 to 1 -> grow effect */
+[data-tooltip]:hover:before {
+	transition-delay: 0.3s;
+	transform: translate(-50%, calc(0px - var(--arrow-size))) scale(1);
+}
+/*
+  Arrow slide down effect only on mouseenter (NOT on mouseleave)
+*/
+[data-tooltip]:hover:after {
+	transition-delay: 0.5s; /* Starting after the grow effect */
+	transition-duration: 0.2s;
+	transform: translateX(-50%) scaleY(1);
+}
+
 
 /* Target Stuff */
 :target {
@@ -352,18 +422,6 @@ details[open] summary{
 	}
 }
 
-@media only screen and (width <= 1920px){
-	figure{
-		max-width: 75%;
-	}
-}
-
-@media only screen and (width <= 1440px){
-	figure{
-		max-width: 50%;
-		border-radius: 5px;
-	}
-}
 
 @media screen and (orientation: portrait) and (max-width: 1080px){
 	figure{
