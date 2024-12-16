@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Python - 9</title>
+</head>
+<body>
+	<h1>9 - Get object type</h1>
+	<p>
+		In this lesson we'll be getting every objects in the scene, check the
+		object type and exclude object that are not needed.<br>
+		A great example of this is the
+		<a href="https://github.com/hexterminal/amprise" target="_blank">
+			audio spectrum by BluePrintRandom</a>.
+		Import the game engine module, define current controller and owner object
+		<span data-tooltip="You'll need to do this on almost every python code in Range Engine.">
+			(I won't be repeating after every lesson :/).
+		</span><br>
+		We get a list of objects with <b>for</b> loop with <span class="mono">scene.objects</span>
+		like so.
+	</p>
+<pre><code>try:
+    import Range
+except:
+    import bge as Range
+    
+cont = Range.logic.getCurrentController()
+own = cont.owner
+scene = Range.logic.getCurrentScene()
+
+def main():
+    for obj in scene.objects:
+        print(obj)</code></pre>
+    <p>
+    	Turn off true level triggering, for now we'll just need to know this once only.<br>
+    	Run the engine and in the console you'll be having results like so.
+    </p>
+    <figure>
+    	<img src="https://i.postimg.cc/v8gJdvQt/list-of-objects.jpg" alt="List of objects printed in the console, from Range Engine 1.5a default setup">
+    	<figcaption>List of objects printed in the console</figcaption>
+    </figure>
+    <p>
+    	Now to see what our object's type is, we'll use python's
+    	<a href="http://bc.vc/bo5x6fQ">
+    		f-strings
+    	</a> which makes
+    	string formatting easier unlike C like syntaxes with
+    	<span class="mono" data-tooltip="string">%s</span>,
+    	<span class="mono" data-tooltip="unsigned integer">%u</span>,
+    	<span class="mono" data-tooltip="character">%c</span>, etc.<br>
+    	On 10th line we do like <span class="mono">print(f"{obj}: {type(obj)}")</span>
+    	replacing <span class="mono">print(obj)</span>. Now your console must be
+    	looking like this.
+    </p>
+    <figure>
+    	<img src="https://i.postimg.cc/y6jZs0vW/list-of-objects-with-type.jpg" alt="List of objects printed with the object type in the console, from Range Engine 1.5a default setup">
+    	<figcaption>List of objects printed with the object type in the console</figcaption>
+    </figure>
+    <p>
+    	You might've learned how check whether a certain varible is an <span class="mono">int</span>,
+    	<span class="mono">bool</span>, <span class="mono">string</span>, etc. So here we check it with
+    	python's built-in <span class="mono">type()</span> function.<br>
+    	Now say you want to get a list of lights and change all of their colors to red, we can do it
+    	like so.
+    </p>
+<pre><code>def main():
+    for obj in scene.objects:
+        #print(f"{obj}: {type(obj)}")
+        if type(obj) == Range.types.KX_LightObject: # &ltbge.types.KX_LightObject&gt in BGE/UPBGE
+            obj.color = (1,0,0)
+        else:pass</code></pre>
+    <p>
+    	So, when you run the engine, you may find your environment slightly red which means
+    	it works! But you just need to turn off "Environment Lighting" just for now to see the
+    	whole scene in red.
+    </p>
+    <figure>
+    	<img src="https://u.cubeupload.com/ropap66508/aFs0Ii.gif" alt="Demonstration of pythonic way of colorizing lights">
+    </figure>
+    <p>
+    	That's all for today's lesson and here,
+    	<a href="" target="_blank">
+    		download the project file</a>.
+    </p>
+    <script src="../../code/highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
+	<script type="text/javascript" src="../../code/syntax.js"></script>
+</head>
+<body>

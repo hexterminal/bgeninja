@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Python - 8</title>
+</head>
+<body>
+	<h1>8 - Active Camera</h1>
+	<p>
+		Create 3 cameras in the current scene, and now we'll move to the codeing part.<br>
+		Import the game engine module, define the current python controller and the owner object if
+		necessary.<br>
+		Our scene shows us the current active camera, so let's define our current scene and get
+		active camera like so. Oh also put it in a function if necessary.
+	</p>
+<pre><code>try:
+    import Range
+except:
+    import bge as Range
+    
+cont = Range.logic.getCurrentController()
+own = cont.owner
+scene = Range.logic.getCurrentScene()
+
+def main():
+    print(scene.active_camera)</code></pre>
+    <p>
+    	For now we print to know what our active camera is.<br>
+    	If you've tried to run the game without looking thru a camera and just run the game
+    	in normal viewport your console would be printing
+    	<span class="mono">__default__cam__</span>.
+    </p>
+    <p>
+    	Now we have 3 cameras in the scene and we don't want to look through the normal
+    	viewport. So we check if our camera is in the default viewport and if so, we will
+    	randomly look through one of our 3 cameras which we've added previously.
+    </p>
+<pre><code>try:
+    import Range
+except:
+    import bge as Range
+
+import random
+
+cont = Range.logic.getCurrentController()
+own = cont.owner
+scene = Range.logic.getCurrentScene()
+
+def main():
+    if scene.active_camera.name == "__default__cam__":
+        scene.active_camera = random.choice(scene.cameras)
+    else:pass
+    </code></pre>
+    <p>
+    	Here after the <span class="mono">main()</span> we check if our camera is
+    	<span class="mono">__default__cam__</span> and if so we randomly choose
+    	a camera from the list <span class="mono">scene.cameras</span>.<br>
+    	The reason why we used <span class="mono">name</span> attribute after
+    	<span class="mono">scene.active_camera</span> is, <u>when you compare
+    	them without that name attribute you are comparing your object with a string</u>.
+    	This is not a vaild condition and hence it will not be satisfied.
+    </p>
+    <p>
+    	<a href="https://drive.google.com/file/d/1Z5TvWuQIp-v-X6V9WdWcXuM7ng4i44EV/view?usp=sharing" target="_blank">
+    		Download the project file
+    	</a>
+    </p>
+    <script src="../../code/highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
+	<script type="text/javascript" src="../../code/syntax.js"></script>
+</head>
+<body>
