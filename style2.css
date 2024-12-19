@@ -139,8 +139,7 @@ span:hover{
 }
 
 .sect-1 h1{
-	cursor: help;
-	font-size: 2rem;
+	font-size: 3rem;
 	margin: 0px 0px 0px;
 	text-decoration: underline;
 }
