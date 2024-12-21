@@ -116,13 +116,20 @@ body::-webkit-scrollbar-track{
 	line-height: 2rem;
 }
 
-#sect-2 progress{
-	width: 50%;
-	margin: 10px auto 0px;
+.prog-container{
+	margin: 10px 0px 0px;
+	display: flex;
+	align-items: center;
 }
 
-#sect-2 .what-prog{
-	margin: auto;
+.what-prog{
+	margin: 0px 10px 0px;
+}
+
+.prog{
+	width: 85%;
+	justify-items: right;
+	margin-left: auto;
 }
 
 #sect-2 p{

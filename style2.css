@@ -39,7 +39,7 @@ body::-webkit-scrollbar-thumb{
 	justify-content: space-between;
 	grid-row-gap:    25px;
 	grid-column-gap: 15px;
-	margin: auto var(--main-margin);
+	margin: auto var(--main-margin) 25px;
 	padding: 0px;
 }
 

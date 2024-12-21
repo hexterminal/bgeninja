@@ -10,7 +10,7 @@ function loadCSS(filePath) {
 
   document.head.appendChild(link);
 }
-loadCSS("../../code/vs2015.css");
+loadCSS("../../../code/vs2015.css");
 
 function favicon(dirpath){
   const link = document.createElement('link');
@@ -20,7 +20,7 @@ function favicon(dirpath){
 
   document.head.appendChild(link);
 }
-favicon("../../img/bgeninja.ico");
+favicon("../../../img/bgeninja.ico");
 
 function tutorial(filePath) {
   const link = document.createElement('link');
@@ -30,4 +30,4 @@ function tutorial(filePath) {
 
   document.head.appendChild(link);
 }
-tutorial("../../style3.css");
+tutorial("../../../style3.css");

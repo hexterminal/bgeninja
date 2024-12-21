@@ -71,6 +71,8 @@
 	<section id="course-space"></section>
 	<section id="sect-2">
 		<h2>Where do I start?</h2>
+
+		<!-- LOGIC BRICKS -->
 		<div class="recc" id="logic-bricks">
 			<h3>Game Engine basics and Logic Bricks</h3>
 			<p>Learn the basics and the logic bricks.</p>
@@ -78,9 +80,13 @@
 			<noscript class="course-buttons-nojs">
 				<a href="./courses/logic-bricks/intro.html"><button>Learn Basics</button></a>
 			</noscript>
-			<progress value="13" max="15"></progress>
-			<p class="what-prog">Lessons Available: 13 / 15</p>
+			<div class="prog-container">
+				<p class="what-prog">Basic</p>
+				<progress class="prog" value="13" max="15"></progress>
+			</div>
 		</div>
+
+		<!-- PYTHON -->
 		<div class="recc" id="python">
 			<h3>Python</h3>
 			<p>You'll learn to do stuff that can be done without logic bricks and have more control over your projects.</p>
@@ -88,15 +94,13 @@
 			<noscript class="course-buttons-nojs">
 				<a href="./courses/python/intro.html"><button>Learn Python</button></a>
 			</noscript>
-			<progress value="7" max="30"></progress>
-			<p class="what-prog">Lessons Available: 7 / ?</p>
+			<div class="prog-container">
+				<p class="what-prog">Basic</p>
+				<progress class="prog" value="7" max="30"></progress>
+			</div>
 		</div>
-		<!-- <div class="recc" id="glsl">
-			<div class="rec-round">3</div>
-			<h3>GLSL</h3>
-			<p>You'll learn to make shaders!</p>
-			<button onclick="goto('/courses/glsl/intro.html')">Learn GLSL</button>
-		</div> -->
+
+		<!-- TUTORIALS -->
 		<div class="recc" id="tutorials">
 			<h3>Tutorials for game engine</h3>
 			<p>Game Engine tutorials with project files!</p>
@@ -104,9 +108,21 @@
 			<noscript class="course-buttons-nojs">
 				<a href="./courses/tutorials/intro.html"><button>Get Tutorials</button></a>
 			</noscript>
-			<progress value="22" max="37"></progress>
-			<p class="what-prog">Lessons Available: 22 / 37</p>
+			<div class="prog-container">
+				<p class="what-prog">Logic Bricks</p>
+				<progress class="prog" value="2" max="4"></progress>
+			</div>
+			<div class="prog-container">
+				<p class="what-prog">Python</p>
+				<progress class="prog" value="6" max="14"></progress>
+			</div>
+			<div class="prog-container">
+				<p class="what-prog">Animations</p>
+				<progress class="prog" value="0" max="3"></progress>
+			</div>
 		</div>
+
+		<!-- SOURCE CODE -->
 		<div class="recc" id="source-code">
 			<h3>Advanced Stuff</h3>
 			<p>Game engine source code related stuff.</p>
@@ -114,15 +130,17 @@
 			<noscript class="course-buttons-nojs">
 				<a href="./courses/advanced/intro.html"><button>Learn Source Code</button></a>
 			</noscript>
-			<progress value="2" max="2"></progress>
-			<p class="what-prog">Lessons Available: 2 / 2</p>
+			<div class="prog-container">
+				<p class="what-prog">Basic</p>
+				<progress class="prog" value="2" max="2"></progress>
+			</div>
 		</div>
 	</section>
 	<section id="sect-3">
 		<div>
 			<h2>What is this all about?</h2>
 			<p>
-				Well, this site is about optimizing games.
+				Well, this site is about making and optimizing your games made in UPBGE or Range.<br>
 				UPBGE is a game engine forked by its developers from Blender 2.79's game engine
 				which was discontinued after Blender 2.80+. The engine has two version as
 				2.0+ which is the Blender's 2.79's branch and 4.0 which is 2.80+'s branch.

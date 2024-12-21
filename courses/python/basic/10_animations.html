@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Python - 10</title>
+</head>
+<body>
+	<h1>10 - Animations</h1>
+	<p>
+		We'll be playing animations, control the animation playback type and control the
+		animations from logic bricks.
+	</p>
+	<h3>Making Our Animation</h3>
+	<p>
+		Create a simple cube animation by either moving, rotating or scaling it.
+		I've made an animation that lasts for 40 frames.
+	</p>
+	<figure>
+		<img src="https://u.cubeupload.com/ropap66508/dwaVF4.gif" alt="Simple 'jump' Animation">
+		<figcaption>Simple 'jump' Animation</figcaption>
+	</figure>
+	<p>
+		After making our animation, we go to <b>Dope Sheet</b> and rename our animation
+		<span class="mono">CubeAction</span> to just
+		<span class="mono" data-tooltip="i made a jump animation, so it's named as 'jump'">jump</span>
+		for our convenience. Now let's move to the coding part.
+	</p>
+	<h3>Code</h3>
+	<p>
+		In our main function create a parameter named <span class="mono">cont</span>
+		for the controller, there's no need to define it for now.
+	</p>
+	<div class="know">
+		<p class="what"></p>
+		<p>
+			Your function which is used by the controller will need 0-1 argument.
+			If you have <u>no argument</u> you'll need to create it like this,
+			which cannot be a good way to do everytime.
+		</p>
+<pre><code>import Range
+def main():
+    cont = Range.logic.getCurrentController() # Not a good idea :(
+    own = cont.owner
+    cont.activate(cont.actuators["lala"])</code></pre>
+    	<p>
+    		If you create your function with <u>a single arugument</u> you'll
+    		need to create it like this, which is a better way. If your code
+    		doesn't have any functions or attributes from <b data-tooltip='or "bge"'>Range</b>
+    		there's no need to import the module.
+    	</p>
+<pre class="language-python"><code>def main(cont):
+    own = cont.owner
+    cont.activate(cont.actuators["lala"])</code></pre>
+    <p>
+    	The reason why do we need only 0 or 1 argument is it accepts only one or you'll
+    	end up getting an error.
+    </p>
+	</div>
+    <p>
+    	We'll need to play our animation now so we need the function
+    	<span class="mono">playAction()</span> and our code looks like this.
+    </p>
+<pre class="language-python"><code>def main(cont):
+    own = cont.owner
+    own.playAction("jump", 0, 40)</code></pre>
+    <p>
+    	Now our cube must be jumping. Jumps once if you haven't turned on true level triggering.
+    </p>
+    <figure>
+    	<img src="https://u.cubeupload.com/ropap66508/iiMJQr.gif" alt="cube jumping">
+    	<figcaption>Cube Jumping</figcaption>
+    </figure>
+    <h5>Detailed look at the playAction function</h5>
+    <p>
+    	The <span class="mono">playAction</span> has parameters like this and we'll look
+    	at <u data-tooltip="you just need to know the basics for now">the basics</u> for now.
+    	Or you can look at <a href="https://rangeengine.tech/api/14/html/api/bge.types.KX_GameObject.html#KX_GameObject.playAction" target="_blank">
+    		the docs</a> if you want.
+    </p>
+<pre class="language-python"><code>playAction(name, start_frame, end_frame, layer=0, priority=0, blendin=0, play_mode=KX_ACTION_MODE_PLAY, layer_weight=0.0, ipo_flags=0, speed=1.0, blend_mode=KX_ACTION_BLEND_BLEND)</code></pre>
+	<ul>
+		<li><b>name</b> (string) – the name of the animation</li>
+		<li><b>start_frame</b> (float) –  the start frame of the animation</li>
+		<li><b>end_frame</b> (float) –  the end frame of the animation</li>
+		<li>
+			<b>priority</b> (integer) – play this animation if there isn’t an action currently
+			playing in this layer with a higher (lower number) priority. The lower the number set
+			for the priority, the higher the priority given to the animation.
+		</li>
+		<li>
+			<b>blendin</b> (float) – the amount of blending between this
+			animation and the previous one on this layer. Helps to have a transition between two animations
+			smoothly.
+		</li>
+		<li>
+			<b>play_mode</b> <span data-tooltip="bge.logic.KX_ACTION_MODE_PLAY (or) 0
+bge.logic.KX_ACTION_MODE_LOOP (or) 1
+bge.logic.KX_ACTION_MODE_PING_PONG (or) 2">(one of <a href="https://rangeengine.tech/api/14/html/api/bge.logic.html#gameobject-playaction-mode" target="_blank">these constants</a>)</span> – the playback mode
+		</li>
+		<li><b>speed</b> (float) – the playback speed of the action as a factor (1.0 = normal speed, 2.0 = 2x speed, etc)</li>
+		<li><b>blend_mode</b> <span data-tooltip="bge.logic.KX_ACTION_BLEND_BLEND (or) 0
+bge.logic.KX_ACTION_BLEND_ADD (or) 1">(one of <a href="https://rangeengine.tech/api/14/html/api/bge.logic.html#gameobject-playaction-blend" target="_blank">these constants</a>)</span> – how to blend this layer with previous layers</li>
+	</ul>
+	<h3>Controlling Logic Bricks</h3>
+	<p>
+		Now we'll control our logic bricks with python, btw you can clear the python code.<br>
+		Add an <b>Action</b> actuator and rename it as <span class="mono">anim_actu</span>,
+		we will select our <span class="mono">jump</span> animation and set the end frame with
+		python.<br>
+		Your <b>action actuators</b> are bascially <span class="mono">BL_ActionActuator</span>
+		with with you can do a lot. To get our actuator we do like so.
+	</p>
+	<pre><code>def main(cont):
+    own = cont.owner
+    if cont.sensors["Always"].positive:
+        anim_actu = cont.actuators["anim_actu"] # Got our actuator
+        anim_actu.action = "jump"  # Animation name
+        anim_actu.frameStart = 0.0 # Start frame
+        anim_actu.frameEnd = 40.0  # End frame
+        cont.activate(anim_actu)   # Activating our actuator</code></pre>
+    <p>
+    	And our logic bricks looks like this.
+    </p>
+    <figure>
+    	<img src="" alt="Action actuator with no name">
+    	<figcaption>Action actuator with no name</figcaption>
+    </figure>
+    <p>
+    	Now if we run the engine, our animation must be working.
+    </p>
+    <script src="../../../code/highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
+	<script type="text/javascript" src="../../../code/syntax.js"></script>
+</head>
+<body>
